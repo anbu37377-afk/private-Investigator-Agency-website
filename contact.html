@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Private Investigator Agency - Secure consultation and case submission">
+    <meta name="keywords" content="contact private investigator, consultation, case submission">
+    <title>Contact Us - Private Investigator Agency</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle">
+        <i class="bi bi-moon"></i>
+    </button>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-shield-check"></i> Private Investigator Agency
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="home-2.html">Home 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary ms-2" href="register.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Modern Page Header -->
+        <section class="hero-section" style="padding: 150px 0 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="mb-4">
+                            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill">
+                                <i class="bi bi-shield-check me-2"></i>CONTACT ELITE INVESTIGATIONS
+                            </span>
+                        </div>
+                        <h1 class="hero-title">Contact Our Expert Team</h1>
+                        <p class="hero-subtitle">Secure and confidential consultation for your investigation needs with immediate response</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Contact Form and Info -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <!-- Contact Form -->
+                    <div class="col-lg-8 mb-4">
+                        <div class="card fade-in-up">
+                            <div class="card-header">
+                                <h4 class="mb-0">
+                                    <i class="bi bi-shield-lock text-warning me-2"></i>
+                                    Secure Contact Form
+                                </h4>
+                                <p class="mb-0 text-muted">All information is protected with military-grade encryption</p>
+                            </div>
+                            <div class="card-body">
+                                <form class="needs-validation" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="firstName" class="form-label">First Name *</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your first name.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your last name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="email" class="form-label">Email Address *</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                            <div class="invalid-feedback">
+                                                Please provide a valid email address.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                            <div class="invalid-feedback">
+                                                Please provide your phone number.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="serviceType" class="form-label">Service Type *</label>
+                                        <select class="form-select" id="serviceType" required>
+                                            <option value="">Select a service...</option>
+                                            <option value="surveillance">Surveillance</option>
+                                            <option value="background">Background Check</option>
+                                            <option value="fraud">Fraud Investigation</option>
+                                            <option value="corporate">Corporate Investigation</option>
+                                            <option value="missing">Missing Person</option>
+                                            <option value="legal">Legal Support</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <div class="invalid-feedback">
+                                            Please select a service type.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="urgency" class="form-label">Urgency Level</label>
+                                        <select class="form-select" id="urgency">
+                                            <option value="normal">Normal</option>
+                                            <option value="urgent">Urgent</option>
+                                            <option value="emergency">Emergency</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject *</label>
+                                        <input type="text" class="form-control" id="subject" required>
+                                        <div class="invalid-feedback">
+                                            Please provide a subject.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message *</label>
+                                        <textarea class="form-control" id="message" rows="5" required placeholder="Please describe your situation and what you need help with. Be as detailed as possible while maintaining confidentiality."></textarea>
+                                        <div class="invalid-feedback">
+                                            Please provide a message.
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="preferredContact" class="form-label">Preferred Contact Method</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="preferredContact" id="contactEmail" value="email" checked>
+                                            <label class="form-check-label" for="contactEmail">
+                                                Email
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="preferredContact" id="contactPhone" value="phone">
+                                            <label class="form-check-label" for="contactPhone">
+                                                Phone
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="preferredContact" id="contactSecure" value="secure">
+                                            <label class="form-check-label" for="contactSecure">
+                                                Secure Client Portal
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="confidentiality" required>
+                                            <label class="form-check-label" for="confidentiality">
+                                                I understand that all information provided will be kept strictly confidential and used only for the purpose of this investigation.
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree to the confidentiality terms.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="terms" required>
+                                            <label class="form-check-label" for="terms">
+                                                I agree to the <a href="#" class="text-primary">terms of service</a> and <a href="#" class="text-primary">privacy policy</a>.
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                You must agree to the terms and conditions.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                        <button type="reset" class="btn btn-outline-secondary">Clear Form</button>
+                                        <button type="submit" class="btn btn-primary">Send Secure Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-lg-4">
+                        <!-- Contact Card -->
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <h5 class="mb-0">Contact Information</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="contact-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-telephone-fill text-primary me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Phone</h6>
+                                            <p class="mb-0">+1 (555) 123-4567</p>
+                                            <small class="text-muted">24/7 Emergency Line</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-envelope-fill text-primary me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Email</h6>
+                                            <p class="mb-0">contact@piagency.com</p>
+                                            <small class="text-muted">Secure encrypted email</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-geo-alt-fill text-primary me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Office</h6>
+                                            <p class="mb-0">123 Security Boulevard<br>New York, NY 10001</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-clock-fill text-primary me-3"></i>
+                                        <div>
+                                            <h6 class="mb-0">Business Hours</h6>
+                                            <p class="mb-0">Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun: 9:00 AM - 6:00 PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Emergency Contact -->
+                        <div class="card mb-4 border-danger">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Emergency Contact</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-2">For urgent investigations requiring immediate attention:</p>
+                                <h5 class="text-danger">+1 (555) 911-HELP</h5>
+                                <small class="text-muted">Available 24/7 for emergency cases</small>
+                            </div>
+                        </div>
+
+                        <!-- Secure Portal -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0"><i class="bi bi-shield-lock me-2"></i>Secure Client Portal</h5>
+                            </div>
+                            <div class="card-body">
+                                <p class="mb-3">Existing clients can access their case files and communicate securely through our encrypted client portal.</p>
+                                <div class="d-grid gap-2">
+                                    <a href="login.html" class="btn btn-primary">Client Login</a>
+                                    <a href="register.html" class="btn btn-outline-primary">Register Account</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="mb-0">Our Location</h4>
+                            </div>
+                            <div class="card-body p-0">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095919355!2d-74.00425878459418!3d40.74844097933039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1678912345678"
+                                    width="100%" 
+                                    height="400" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5" style="background: #0a0e27; padding: 80px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold" style="color: #ffffff !important; font-size: 3rem; font-weight: 900; margin-bottom: 1rem;">Frequently Asked Questions</h2>
+                        <p class="lead" style="color: #e8e8e8 !important; font-size: 1.2rem; font-weight: 300; letter-spacing: 1px;">Common questions about our services and contact process</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="accordion" id="contactAccordion">
+                            <div class="accordion-item" style="background: #1a1f2e; border: 1px solid #d4af37; margin-bottom: 1rem; border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header" style="background: rgba(212, 175, 55, 0.1); border-bottom: 1px solid #d4af37; margin: 0;">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" style="background: transparent; border: none; color: #ffffff !important; font-weight: 600; padding: 1rem 1.25rem; text-align: left; width: 100%;">
+                                        How quickly will you respond to my inquiry?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#contactAccordion">
+                                    <div class="accordion-body" style="color: #ffffff !important; padding: 1.25rem; background: #1a1f2e;">
+                                        We respond to all inquiries within 24 hours during business days. For urgent matters, please call our emergency line for immediate assistance.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background: #1a1f2e; border: 1px solid #d4af37; margin-bottom: 1rem; border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header" style="background: rgba(212, 175, 55, 0.1); border-bottom: 1px solid #d4af37; margin: 0;">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" style="background: transparent; border: none; color: #ffffff !important; font-weight: 600; padding: 1rem 1.25rem; text-align: left; width: 100%;">
+                                        Is my information kept confidential?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+                                    <div class="accordion-body" style="color: #ffffff !important; padding: 1.25rem; background: #1a1f2e;">
+                                        Absolutely. All client information is protected by strict confidentiality agreements and professional ethics. We use encrypted communication channels and secure data storage.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" style="background: #1a1f2e; border: 1px solid #d4af37; margin-bottom: 1rem; border-radius: 10px; overflow: hidden;">
+                                <h2 class="accordion-header" style="background: rgba(212, 175, 55, 0.1); border-bottom: 1px solid #d4af37; margin: 0;">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" style="background: transparent; border: none; color: #ffffff !important; font-weight: 600; padding: 1rem 1.25rem; text-align: left; width: 100%;">
+                                        Do you offer free consultations?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#contactAccordion">
+                                    <div class="accordion-body" style="color: #ffffff !important; padding: 1.25rem; background: #1a1f2e;">
+                                        Yes, we offer a complimentary initial consultation to discuss your case and determine how we can best assist you. Contact us to schedule your confidential consultation.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="bi bi-shield-check"></i> Private Investigator Agency</h5>
+                    <p>Your trusted partner for professional investigation services. We handle sensitive cases with utmost confidentiality and expertise.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 mb-4">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="login.html">Client Portal</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe to get updates on investigation tips and security insights.</p>
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button class="btn btn-outline-light" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4 bg-white">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>&copy; 2026 Private Investigator Agency. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="backToTop" class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
