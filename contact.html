@@ -14,11 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <!-- Theme Toggle Button -->
-    <button id="themeToggle" class="theme-toggle">
-        <i class="bi bi-moon"></i>
-    </button>
+<body class="page-contact">
 
     <!-- Header Navigation -->
     <header>
@@ -32,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas">
+                <div class="offcanvas offcanvas-end offcanvas-lg" id="navbarOffcanvas">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -68,6 +64,11 @@
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-outline-primary ms-2" href="register.html">Sign Up</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button" aria-label="Toggle dark and light mode">
+                                    <i class="bi bi-moon"></i>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -406,7 +407,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="bi bi-shield-check"></i> Private Investigator Agency</h5>
+                    <h5 class="footer-brand">
+                        <a href="index.html">
+                            <i class="bi bi-shield-check"></i> Private Investigator Agency
+                        </a>
+                    </h5>
                     <p>Your trusted partner for professional investigation services. We handle sensitive cases with utmost confidentiality and expertise.</p>
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
@@ -464,3 +469,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

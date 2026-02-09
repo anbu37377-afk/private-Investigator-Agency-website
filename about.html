@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About Private Investigator Agency - Our mission, ethics, and professional team">
     <meta name="keywords" content="about us, private investigator mission, investigation ethics">
     <title>About Us - Private Investigator Agency</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -17,13 +18,15 @@
         [data-theme="dark"] .bg-light {
             background-color: #1a1f2e !important;
         }
+
+        .team-card .card-img-top {
+            height: 350px;
+            object-fit: cover;
+        }
     </style>
 </head>
-<body>
-    <!-- Theme Toggle Button -->
-    <button id="themeToggle" class="theme-toggle">
-        <i class="bi bi-moon"></i>
-    </button>
+
+<body class="page-about">
 
     <!-- Header Navigation -->
     <header>
@@ -32,12 +35,13 @@
                 <a class="navbar-brand" href="index.html">
                     <i class="bi bi-shield-check"></i> Private Investigator Agency
                 </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas">
+
+                <div class="offcanvas offcanvas-end offcanvas-lg" id="navbarOffcanvas">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -74,6 +78,12 @@
                             <li class="nav-item">
                                 <a class="btn btn-outline-primary ms-2" href="register.html">Sign Up</a>
                             </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button"
+                                    aria-label="Toggle dark and light mode">
+                                    <i class="bi bi-moon"></i>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -94,7 +104,8 @@
                             </span>
                         </div>
                         <h1 class="hero-title">About Our Elite Agency</h1>
-                        <p class="hero-subtitle">Professional investigation excellence built on trust, integrity, and unmatched expertise</p>
+                        <p class="hero-subtitle">Professional investigation excellence built on trust, integrity, and
+                            unmatched expertise</p>
                     </div>
                 </div>
             </div>
@@ -106,16 +117,21 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4">
                         <div class="hero-image-wrapper">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Mission" class="img-fluid rounded-4 shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                                alt="Our Mission" class="img-fluid rounded-4 shadow-lg">
                             <div class="hero-image-overlay"></div>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <div class="section-header text-start">
+                        <div class="section-header text-center">
                             <h2 class="section-title">Our Mission</h2>
                         </div>
-                        <p class="lead mb-4">To deliver exceptional investigation services that provide clarity, truth, and peace of mind while maintaining the highest standards of confidentiality and professionalism.</p>
-                        <p>We are committed to uncovering the facts you need to make informed decisions. Our team combines traditional investigative techniques with cutting-edge technology to deliver comprehensive results.</p>
+                        <p class="lead mb-4">To deliver exceptional investigation services that provide clarity, truth,
+                            and peace of mind while maintaining the highest standards of confidentiality and
+                            professionalism.</p>
+                        <p>We are committed to uncovering the facts you need to make informed decisions. Our team
+                            combines traditional investigative techniques with cutting-edge technology to deliver
+                            comprehensive results.</p>
                         <div class="row mt-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center mb-3">
@@ -146,7 +162,7 @@
                 </div>
             </div>
         </section>
-                               
+
 
         <!-- Ethics & Values -->
         <section class="py-5 bg-light">
@@ -163,7 +179,8 @@
                             <div class="card-body">
                                 <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
                                 <h5 class="card-title">Integrity</h5>
-                                <p class="card-text">We conduct all investigations with unwavering ethical standards and complete honesty.</p>
+                                <p class="card-text">We conduct all investigations with unwavering ethical standards and
+                                    complete honesty.</p>
                             </div>
                         </div>
                     </div>
@@ -172,7 +189,8 @@
                             <div class="card-body">
                                 <i class="bi bi-lock display-4 text-primary mb-3"></i>
                                 <h5 class="card-title">Confidentiality</h5>
-                                <p class="card-text">Your privacy is paramount. All cases are handled with absolute discretion.</p>
+                                <p class="card-text">Your privacy is paramount. All cases are handled with absolute
+                                    discretion.</p>
                             </div>
                         </div>
                     </div>
@@ -181,7 +199,8 @@
                             <div class="card-body">
                                 <i class="bi bi-award display-4 text-primary mb-3"></i>
                                 <h5 class="card-title">Excellence</h5>
-                                <p class="card-text">We strive for excellence in every aspect of our investigative work.</p>
+                                <p class="card-text">We strive for excellence in every aspect of our investigative work.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -190,7 +209,8 @@
                             <div class="card-body">
                                 <i class="bi bi-heart display-4 text-primary mb-3"></i>
                                 <h5 class="card-title">Compassion</h5>
-                                <p class="card-text">We understand the sensitive nature of our work and approach each case with empathy.</p>
+                                <p class="card-text">We understand the sensitive nature of our work and approach each
+                                    case with empathy.</p>
                             </div>
                         </div>
                     </div>
@@ -209,8 +229,9 @@
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card h-100 team-card">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Team Member">
                             <div class="card-body text-center">
                                 <h5 class="card-title">John Anderson</h5>
                                 <p class="text-muted">Lead Investigator</p>
@@ -223,8 +244,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card h-100 team-card">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Team Member">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Sarah Mitchell</h5>
                                 <p class="text-muted">Background Specialist</p>
@@ -237,8 +259,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card h-100 team-card">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Team Member">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Michael Chen</h5>
                                 <p class="text-muted">Fraud Investigator</p>
@@ -251,8 +274,9 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Team Member">
+                        <div class="card h-100 team-card">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Team Member">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Lisa Rodriguez</h5>
                                 <p class="text-muted">Surveillance Expert</p>
@@ -284,7 +308,8 @@
                     </div>
                     <div class="col-lg-6 mb-4">
                         <h4 class="mb-3"><i class="bi bi-person-check text-primary me-2"></i>Background Checks</h4>
-                        <p>Comprehensive background investigations for employment, partnerships, and personal matters.</p>
+                        <p>Comprehensive background investigations for employment, partnerships, and personal matters.
+                        </p>
                     </div>
                     <div class="col-lg-6 mb-4">
                         <h4 class="mb-3"><i class="bi bi-eye text-primary me-2"></i>Surveillance Operations</h4>
@@ -304,16 +329,19 @@
                 <div class="row">
                     <div class="col-lg-12 text-center mb-5">
                         <h2 class="display-5 fw-bold">Professional Training & Certifications</h2>
-                        <p class="lead">Our commitment to excellence through continuous education and industry certifications</p>
+                        <p class="lead">Our commitment to excellence through continuous education and industry
+                            certifications</p>
                     </div>
                 </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4">
-                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Professional Training" class="img-fluid rounded shadow">
+                        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Professional Training" class="img-fluid rounded shadow">
                     </div>
                     <div class="col-lg-6 mb-4">
                         <h3 class="mb-4">Industry-Leading Expertise</h3>
-                        <p class="mb-3">Our investigators maintain the highest standards through rigorous training and certification programs:</p>
+                        <p class="mb-3">Our investigators maintain the highest standards through rigorous training and
+                            certification programs:</p>
                         <div class="row">
                             <div class="col-6 mb-3">
                                 <div class="d-flex align-items-center">
@@ -340,7 +368,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-3">Each team member undergoes quarterly training to stay current with the latest investigation techniques and legal requirements.</p>
+                        <p class="mt-3">Each team member undergoes quarterly training to stay current with the latest
+                            investigation techniques and legal requirements.</p>
                     </div>
                 </div>
             </div>
@@ -358,10 +387,12 @@
                 <div class="row g-4">
                     <div class="col-lg-4">
                         <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Digital Forensics" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Digital Forensics" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Digital Forensics Lab</h5>
-                                <p class="card-text">State-of-the-art digital forensics laboratory for data recovery and analysis.</p>
+                                <p class="card-text">State-of-the-art digital forensics laboratory for data recovery and
+                                    analysis.</p>
                                 <ul class="small">
                                     <li>Data recovery specialists</li>
                                     <li>Mobile device forensics</li>
@@ -372,10 +403,12 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Surveillance Tech" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="Surveillance Tech" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">Advanced Surveillance</h5>
-                                <p class="card-text">Latest surveillance technology for discreet and effective monitoring.</p>
+                                <p class="card-text">Latest surveillance technology for discreet and effective
+                                    monitoring.</p>
                                 <ul class="small">
                                     <li>4K HD cameras</li>
                                     <li>Night vision equipment</li>
@@ -386,7 +419,8 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="GPS Tracking" style="height: 200px; object-fit: cover;">
+                            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                class="card-img-top" alt="GPS Tracking" style="height: 200px; object-fit: cover;">
                             <div class="card-body">
                                 <h5 class="card-title">GPS Tracking Systems</h5>
                                 <p class="card-text">Real-time tracking and location monitoring solutions.</p>
@@ -420,7 +454,9 @@
                                     <div>
                                         <h5 class="card-title">Corporate Fraud Recovery</h5>
                                         <p class="text-muted mb-2">Fortune 500 Company</p>
-                                        <p class="card-text">Successfully identified and recovered $2.3M in assets from internal fraud scheme spanning 18 months. Our investigation provided crucial evidence for legal proceedings.</p>
+                                        <p class="card-text">Successfully identified and recovered $2.3M in assets from
+                                            internal fraud scheme spanning 18 months. Our investigation provided crucial
+                                            evidence for legal proceedings.</p>
                                         <div class="mt-3">
                                             <span class="badge bg-success">Resolved</span>
                                             <span class="badge bg-info">Corporate</span>
@@ -438,7 +474,8 @@
                                     <div>
                                         <h5 class="card-title">Missing Person Located</h5>
                                         <p class="text-muted mb-2">Family Investigation</p>
-                                        <p class="card-text">Located a missing person after 3 years of searching using advanced skip tracing techniques and nationwide network of contacts.</p>
+                                        <p class="card-text">Located a missing person after 3 years of searching using
+                                            advanced skip tracing techniques and nationwide network of contacts.</p>
                                         <div class="mt-3">
                                             <span class="badge bg-success">Resolved</span>
                                             <span class="badge bg-warning">Personal</span>
@@ -464,36 +501,42 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 mb-4">
                         <h3 class="mb-4">Making a Positive Impact</h3>
-                        <p class="mb-3">We believe in using our expertise to support our community and promote safety:</p>
+                        <p class="mb-3">We believe in using our expertise to support our community and promote safety:
+                        </p>
                         <div class="row">
                             <div class="col-12 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-heart-fill text-danger me-2"></i>
-                                    <span><strong>Pro Bono Services:</strong> Free investigation services for domestic violence victims</span>
+                                    <span><strong>Pro Bono Services:</strong> Free investigation services for domestic
+                                        violence victims</span>
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-people-fill text-primary me-2"></i>
-                                    <span><strong>Community Workshops:</strong> Educational programs on personal safety and fraud prevention</span>
+                                    <span><strong>Community Workshops:</strong> Educational programs on personal safety
+                                        and fraud prevention</span>
                                 </div>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-shield-fill text-success me-2"></i>
-                                    <span><strong>Law Enforcement Partnerships:</strong> Collaborating with local police on missing person cases</span>
+                                    <span><strong>Law Enforcement Partnerships:</strong> Collaborating with local police
+                                        on missing person cases</span>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="d-flex align-items-center">
                                     <i class="bi bi-trophy-fill text-warning me-2"></i>
-                                    <span><strong>Youth Programs:</strong> Mentoring aspiring investigators through internship programs</span>
+                                    <span><strong>Youth Programs:</strong> Mentoring aspiring investigators through
+                                        internship programs</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Community Service" class="img-fluid rounded shadow">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                            alt="Community Service" class="img-fluid rounded shadow">
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -544,8 +587,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="bi bi-shield-check"></i> Private Investigator Agency</h5>
-                    <p>Your trusted partner for professional investigation services. We handle sensitive cases with utmost confidentiality and expertise.</p>
+                    <h5 class="footer-brand">
+                        <a href="index.html">
+                            <i class="bi bi-shield-check"></i> Private Investigator Agency
+                        </a>
+                    </h5>
+                    <p>Your trusted partner for professional investigation services. We handle sensitive cases with
+                        utmost confidentiality and expertise.</p>
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
@@ -601,4 +649,5 @@
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Corporate & Legal Investigation Services - Professional Private Investigator Agency">
+    <meta name="description"
+        content="Corporate & Legal Investigation Services - Professional Private Investigator Agency">
     <meta name="keywords" content="corporate investigation, legal investigation, fraud detection, business security">
     <title>Corporate Investigation Services - Private Investigator Agency</title>
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <style>
-        body {
-            background-color: #0a0e1a;
-            color: #f7fafc;
-        }
-        
         .hero-corporate {
-            background: linear-gradient(135deg, #0a0e1a 0%, #1a1f2e 50%, #2d3748 100%);
+            background: linear-gradient(135deg, #0a0e27 0%, #1e3a5f 100%);
             min-height: 100vh;
             position: relative;
             overflow: hidden;
         }
-        
+
         .hero-corporate::before {
             content: '';
             position: absolute;
@@ -34,42 +31,42 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></svg>');
-            opacity: 0.5;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="none" stroke="rgba(212, 175, 55, 0.1)" stroke-width="0.5"/></svg>');
+            opacity: 0.3;
         }
-        
+
         .premium-card {
             background: rgba(26, 31, 46, 0.9);
-            border: 1px solid rgba(74, 85, 104, 0.3);
+            border: 1px solid rgba(212, 175, 55, 0.1);
             backdrop-filter: blur(10px);
             transition: all 0.3s ease;
         }
-        
+
         .premium-card:hover {
             transform: translateY(-5px);
-            border-color: rgba(74, 85, 104, 0.6);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-color: rgba(212, 175, 55, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .text-gold {
-            color: #d4af37;
+            color: #d4af37 !important;
         }
-        
+
         .btn-gold {
-            background: linear-gradient(45deg, #d4af37, #f4e4bc);
-            color: #0a0e1a;
+            background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%);
+            color: #0a0e27;
             border: none;
             font-weight: 600;
             padding: 12px 30px;
             border-radius: 5px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-gold:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
-        
+
         .stat-counter {
             font-size: 3rem;
             font-weight: 700;
@@ -77,57 +74,59 @@
         }
     </style>
 </head>
-<body>
+
+<body class="page-home-alt">
     <!-- Header Navigation -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(10, 14, 26, 0.95) !important;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <i class="bi bi-shield-check text-gold"></i> 
-                    <span class="text-gold">Private Investigator Agency</span>
+                    <i class="bi bi-shield-check"></i> Private Investigator Agency
                 </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" style="background-color: #1a1f2e;">
+
+                <div class="offcanvas offcanvas-end offcanvas-lg" id="navbarOffcanvas">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title text-white">Menu</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+                        <h5 class="offcanvas-title">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-gold" href="home-2.html">Home 2</a>
+                                <a class="nav-link active" href="home-2.html">Home 2</a>
                             </li>
-                            
+
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="about.html">About</a>
+                                <a class="nav-link" href="dashboard.html">Dashboard</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="services.html">Services</a>
+                                <a class="nav-link" href="about.html">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="pricing.html">Pricing</a>
+                                <a class="nav-link" href="services.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                                <a class="nav-link" href="pricing.html">Pricing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="login.html">Login</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="login.html">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-gold ms-2" href="register.html">Sign Up</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
-                                <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button" aria-label="Toggle dark and light mode">
+                                <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button"
+                                    aria-label="Toggle dark and light mode">
                                     <i class="bi bi-moon"></i>
                                 </button>
                             </li>
@@ -149,8 +148,10 @@
                             <div class="mb-4">
                                 <span class="badge bg-gold text-dark px-3 py-2">CORPORATE & LEGAL</span>
                             </div>
-                            <h1 class="display-3 fw-bold mb-4">Elite Corporate <span class="text-gold">Investigation</span> Services</h1>
-                            <p class="lead mb-4">Specialized investigation solutions for corporations, legal firms, and high-net-worth individuals. Discreet, thorough, and legally compliant.</p>
+                            <h1 class="hero-title">Elite Corporate Investigation Services</h1>
+                            <p class="hero-subtitle">Specialized investigation solutions for corporations, legal firms,
+                                and
+                                high-net-worth individuals. Discreet, thorough, and legally compliant.</p>
                             <div class="d-flex gap-3 flex-wrap">
                                 <a href="contact.html" class="btn btn-gold btn-lg">Schedule Consultation</a>
                                 <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
@@ -159,7 +160,8 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-image text-center">
-                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Corporate Investigation" class="img-fluid rounded shadow-lg">
+                            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                                alt="Corporate Investigation" class="img-fluid rounded shadow-lg">
                         </div>
                     </div>
                 </div>
@@ -219,7 +221,8 @@
                                     <i class="bi bi-building display-4 text-gold me-3"></i>
                                     <h4 class="card-title text-white mb-0">Corporate Fraud Investigation</h4>
                                 </div>
-                                <p class="text-muted">Comprehensive fraud detection and investigation services including financial fraud, embezzlement, and internal theft cases.</p>
+                                <p class="text-muted">Comprehensive fraud detection and investigation services including
+                                    financial fraud, embezzlement, and internal theft cases.</p>
                                 <ul class="text-muted">
                                     <li>Financial statement analysis</li>
                                     <li>Asset tracing</li>
@@ -237,7 +240,8 @@
                                     <i class="bi bi-briefcase display-4 text-gold me-3"></i>
                                     <h4 class="card-title text-white mb-0">Due Diligence</h4>
                                 </div>
-                                <p class="text-muted">Thorough background investigations for mergers, acquisitions, partnerships, and investment decisions.</p>
+                                <p class="text-muted">Thorough background investigations for mergers, acquisitions,
+                                    partnerships, and investment decisions.</p>
                                 <ul class="text-muted">
                                     <li>Corporate background checks</li>
                                     <li>Management team verification</li>
@@ -255,7 +259,8 @@
                                     <i class="bi bi-shield-check display-4 text-gold me-3"></i>
                                     <h4 class="card-title text-white mb-0">Intellectual Property Protection</h4>
                                 </div>
-                                <p class="text-muted">Investigation services to protect trade secrets, patents, trademarks, and proprietary information.</p>
+                                <p class="text-muted">Investigation services to protect trade secrets, patents,
+                                    trademarks, and proprietary information.</p>
                                 <ul class="text-muted">
                                     <li>Trade secret theft investigation</li>
                                     <li>Patent infringement cases</li>
@@ -273,7 +278,8 @@
                                     <i class="bi bi-gavel display-4 text-gold me-3"></i>
                                     <h4 class="card-title text-white mb-0">Legal Support Services</h4>
                                 </div>
-                                <p class="text-muted">Comprehensive investigation support for legal proceedings, litigation, and dispute resolution.</p>
+                                <p class="text-muted">Comprehensive investigation support for legal proceedings,
+                                    litigation, and dispute resolution.</p>
                                 <ul class="text-muted">
                                     <li>Witness location and interviews</li>
                                     <li>Evidence gathering</li>
@@ -294,7 +300,8 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="display-5 fw-bold text-white mb-4">Secure Client Case Update Portal</h2>
-                        <p class="lead text-gold mb-4">Access your case files, review progress reports, and communicate securely with your investigation team through our encrypted client portal.</p>
+                        <p class="lead text-gold mb-4">Access your case files, review progress reports, and communicate
+                            securely with your investigation team through our encrypted client portal.</p>
                         <div class="d-flex gap-3 justify-content-center">
                             <a href="login.html" class="btn btn-gold btn-lg">
                                 <i class="bi bi-lock-fill"></i> Secure Client Login
@@ -314,8 +321,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="bi bi-shield-check text-gold"></i> Private Investigator Agency</h5>
-                    <p>Elite corporate investigation services with uncompromising discretion and professional excellence.</p>
+                    <h5 class="footer-brand text-gold">
+                        <a href="index.html" class="text-gold">
+                            <i class="bi bi-shield-check text-gold"></i> Private Investigator Agency
+                        </a>
+                    </h5>
+                    <p>Elite corporate investigation services with uncompromising discretion and professional
+                        excellence.</p>
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
                         <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
@@ -352,7 +364,8 @@
             <hr class="my-4">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p class="text-muted">&copy; 2026 Private Investigator Agency. All rights reserved. | Privacy & Confidentiality Guaranteed</p>
+                    <p class="text-muted">&copy; 2026 Private Investigator Agency. All rights reserved. | Privacy &
+                        Confidentiality Guaranteed</p>
                 </div>
             </div>
         </div>
@@ -368,4 +381,5 @@
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -14,11 +14,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <!-- Theme Toggle Button -->
-    <button id="themeToggle" class="theme-toggle">
-        <i class="bi bi-moon"></i>
-    </button>
+<body class="page-services">
 
     <!-- Header Navigation -->
     <header>
@@ -32,7 +28,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas">
+                <div class="offcanvas offcanvas-end offcanvas-lg" id="navbarOffcanvas">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title">Menu</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
@@ -68,6 +64,11 @@
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-outline-primary ms-2" href="register.html">Sign Up</a>
+                            </li>
+                            <li class="nav-item d-flex align-items-center">
+                                <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button" aria-label="Toggle dark and light mode">
+                                    <i class="bi bi-moon"></i>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -206,8 +207,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center mb-5">
-                        <h2 class="display-5 fw-bold" style="color: #000000 !important; font-size: 3rem; font-weight: 900; margin-bottom: 1rem; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);">Frequently Asked Questions</h2>
-                        <p class="lead" style="color: #000000 !important; font-size: 1.2rem; font-weight: 300; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);">Common questions about our surveillance services</p>
+                        <h2 class="display-5 fw-bold" style="color: var(--text-light) !important; font-size: 3rem; font-weight: 900; margin-bottom: 1rem; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);">Frequently Asked Questions</h2>
+                        <p class="lead" style="color: var(--text-light) !important; font-size: 1.2rem; font-weight: 300; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);">Common questions about our surveillance services</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -258,8 +259,8 @@
         <!-- CTA Section -->
         <section class="py-5 bg-primary text-white" style="background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%) !important; padding: 80px 0;">
             <div class="container text-center">
-                <h2 class="display-5 fw-bold mb-4" style="color: #000000 !important; font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem;">Ready to Start Your Investigation?</h2>
-                <p class="lead mb-4" style="color: #000000 !important; font-size: 1.2rem; font-weight: 300; letter-spacing: 1px;">Contact us today for a confidential consultation</p>
+                <h2 class="display-5 fw-bold mb-4" style="color: var(--text-light) !important; font-size: 3rem; font-weight: 900; margin-bottom: 1.5rem;">Ready to Start Your Investigation?</h2>
+                <p class="lead mb-4" style="color: var(--text-light) !important; font-size: 1.2rem; font-weight: 300; letter-spacing: 1px;">Contact us today for a confidential consultation</p>
                 <a href="contact.html" class="btn btn-light btn-lg" style="background: #000000 !important; border: 2px solid #000000 !important; color: #ffffff !important; font-weight: 700; padding: 12px 30px; border-radius: 50px; text-transform: uppercase; letter-spacing: 1px;">Get Started</a>
             </div>
         </section>
@@ -309,20 +310,20 @@
         <section class="py-5" style="background: #ffffff; padding: 80px 0;">
             <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="display-5 fw-bold mb-4" style="color: #000000 !important;">Expert Investigation Team</h2>
-                    <p class="lead" style="color: #333333 !important;">Meet our highly trained and experienced investigators</p>
+                    <h2 class="display-5 fw-bold mb-4" style="color: var(--text-light) !important;">Expert Investigation Team</h2>
+                    <p class="lead" style="color: var(--text-muted) !important;">Meet our highly trained and experienced investigators</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4">
                         <div class="card h-100 text-center" style="background: #ffffff; border: 2px solid #d4af37; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
                             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Lead Investigator" style="height: 200px; object-fit: cover; border-radius: 13px 13px 0 0;">
-                            <div class="card-body" style="color: #000000 !important;">
-                                <h5 class="card-title" style="color: #000000 !important;">John Smith</h5>
+                            <div class="card-body" style="color: var(--text-light) !important;">
+                                <h5 class="card-title" style="color: var(--text-light) !important;">John Smith</h5>
                                 <p class="text-muted" style="color: #666666 !important;">Lead Investigator</p>
-                                <p class="card-text" style="color: #333333 !important;">15+ years of experience in corporate and private investigations</p>
+                                <p class="card-text" style="color: var(--text-muted) !important;">15+ years of experience in corporate and private investigations</p>
                                 <div class="mb-3">
-                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: #000000 !important;">Certified</span>
-                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: #000000 !important;">Expert</span>
+                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: var(--text-light) !important;">Certified</span>
+                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: var(--text-light) !important;">Expert</span>
                                 </div>
                             </div>
                         </div>
@@ -330,13 +331,13 @@
                     <div class="col-lg-4">
                         <div class="card h-100 text-center" style="background: #ffffff; border: 2px solid #d4af37; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
                             <img src="https://images.unsplash.com/photo-1494790108755-2616b332c1ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Digital Forensics" style="height: 200px; object-fit: cover; border-radius: 13px 13px 0 0;">
-                            <div class="card-body" style="color: #000000 !important;">
-                                <h5 class="card-title" style="color: #000000 !important;">Sarah Johnson</h5>
+                            <div class="card-body" style="color: var(--text-light) !important;">
+                                <h5 class="card-title" style="color: var(--text-light) !important;">Sarah Johnson</h5>
                                 <p class="text-muted" style="color: #666666 !important;">Digital Forensics Expert</p>
-                                <p class="card-text" style="color: #333333 !important;">Specialized in digital evidence recovery and cyber investigation</p>
+                                <p class="card-text" style="color: var(--text-muted) !important;">Specialized in digital evidence recovery and cyber investigation</p>
                                 <div class="mb-3">
-                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: #000000 !important;">Certified</span>
-                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: #000000 !important;">Tech Expert</span>
+                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: var(--text-light) !important;">Certified</span>
+                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: var(--text-light) !important;">Tech Expert</span>
                                 </div>
                             </div>
                         </div>
@@ -344,13 +345,13 @@
                     <div class="col-lg-4">
                         <div class="card h-100 text-center" style="background: #ffffff; border: 2px solid #d4af37; border-radius: 15px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);">
                             <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Surveillance Specialist" style="height: 200px; object-fit: cover; border-radius: 13px 13px 0 0;">
-                            <div class="card-body" style="color: #000000 !important;">
-                                <h5 class="card-title" style="color: #000000 !important;">Michael Davis</h5>
+                            <div class="card-body" style="color: var(--text-light) !important;">
+                                <h5 class="card-title" style="color: var(--text-light) !important;">Michael Davis</h5>
                                 <p class="text-muted" style="color: #666666 !important;">Surveillance Specialist</p>
-                                <p class="card-text" style="color: #333333 !important;">Expert in covert operations and advanced surveillance techniques</p>
+                                <p class="card-text" style="color: var(--text-muted) !important;">Expert in covert operations and advanced surveillance techniques</p>
                                 <div class="mb-3">
-                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: #000000 !important;">Certified</span>
-                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: #000000 !important;">Specialist</span>
+                                    <span class="badge bg-warning me-1" style="background: #d4af37 !important; color: var(--text-light) !important;">Certified</span>
+                                    <span class="badge bg-primary" style="background: #d4af37 !important; color: var(--text-light) !important;">Specialist</span>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +420,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5><i class="bi bi-shield-check"></i> Private Investigator Agency</h5>
+                    <h5 class="footer-brand">
+                        <a href="index.html">
+                            <i class="bi bi-shield-check"></i> Private Investigator Agency
+                        </a>
+                    </h5>
                     <p>Your trusted partner for professional investigation services.</p>
                     <div class="social-links">
                         <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
@@ -477,3 +482,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+
