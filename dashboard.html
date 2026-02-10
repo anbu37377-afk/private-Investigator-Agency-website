@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Custom CSS -->
@@ -77,9 +78,27 @@
             color: var(--accent-color);
         }
 
+        .stat-card .d-flex {
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .stat-card .display-4 {
+            font-size: clamp(1.6rem, 2.2vw, 2.4rem);
+            line-height: 1;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+
+        .stat-card .stat-value {
+            line-height: 1.1;
+            overflow-wrap: anywhere;
+        }
+
         .top-header {
             background: var(--gradient-1);
-            color: var(--text-light);
+            color: #ffffff;
+            /* Force white text */
             padding: 20px 0;
             margin-bottom: 30px;
             border-radius: 15px;
@@ -159,6 +178,25 @@
             width: 20px;
             text-align: center;
         }
+
+        .sidebar-brand-name {
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 767.98px) {
+            .main-content {
+                padding: 15px 12px;
+            }
+
+            .top-header {
+                padding: 16px 14px;
+            }
+
+            .stat-card {
+                padding: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -172,7 +210,8 @@
         <div class="text-center p-4">
             <a href="index.html" class="text-white text-decoration-none sidebar-brand d-block mb-0">
                 <i class="bi bi-shield-check text-warning fs-3 mb-2 d-inline-block"></i>
-                <h5 class="fw-bold text-uppercase letter-spacing-1 mb-0">Client Portal</h5>
+                <h5 class="fw-bold text-uppercase letter-spacing-1 mb-1">Private Investigator Agency</h5>
+                <small class="text-muted d-block sidebar-brand-name">Client Portal</small>
             </a>
         </div>
         <nav class="sidebar-nav">
@@ -227,24 +266,29 @@
         <!-- Top Header -->
         <div class="top-header">
             <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
                         <button class="btn btn-outline-light me-3" id="sidebarToggle">
                             <i class="bi bi-list"></i>
                         </button>
-                        <h4 class="mb-0 d-inline">Client Dashboard</h4>
+                        <h4 class="mb-0 text-white d-none d-md-block">Private Investigator Agency Dashboard</h4>
+                        <h4 class="mb-0 text-white d-block d-md-none fs-5">Client Dashboard</h4>
                     </div>
-                    <div class="col-md-6 text-end">
-                        <div class="d-inline-block me-3 position-relative">
-                            <button class="btn btn-outline-light">
+
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="position-relative">
+                            <button
+                                class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px; padding: 0;">
                                 <i class="bi bi-bell"></i>
                             </button>
                             <span class="notification-badge">5</span>
                         </div>
-                        <div class="d-inline-block">
-                            <span class="me-2">Welcome, John Doe</span>
+                        <div class="d-flex align-items-center">
+                            <span class="me-2 d-none d-sm-inline text-white">Welcome, John Doe</span>
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
-                                alt="Profile" class="rounded-circle" width="40" height="40">
+                                alt="Profile" class="rounded-circle border border-warning" width="40" height="40"
+                                style="object-fit: cover;">
                         </div>
                     </div>
                 </div>

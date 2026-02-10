@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -136,7 +137,7 @@
             <div class="container">
                 <div class="row g-4" id="blogGrid">
                     <!-- Featured Post -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 order-2 order-lg-1">
                         <article class="card h-100 featured-post">
                             <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=800&q=80"
                                 class="card-img-top" alt="Corporate Fraud Investigation">
@@ -151,7 +152,8 @@
                                 <p class="card-text">An in-depth analysis of a recent corporate fraud investigation that
                                     resulted in recovering over $2 million in assets for our client. Learn about the
                                     techniques and challenges faced during this complex case.</p>
-                                <div class="d-flex justify-content-between align-items-center">
+                                <div
+                                    class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
                                     <div class="author-info">
                                         <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
                                             alt="Author" class="rounded-circle me-2" width="30" height="30">
@@ -164,7 +166,7 @@
                     </div>
 
                     <!-- Sidebar -->
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 order-1 order-lg-2">
                         <!-- Categories -->
                         <div class="card mb-4">
                             <div class="card-header">
@@ -219,365 +221,377 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-                </div>
 
-                <!-- More Blog Posts -->
-                <div class="row g-4 mt-2">
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Protecting Your Business">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-info me-2">Security Tips</span>
-                                    <small class="text-muted">March 12, 2024</small>
+                    <!-- More Blog Posts -->
+                    <div class="row g-4 mt-2">
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Protecting Your Business">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-info me-2">Security Tips</span>
+                                        <small class="text-muted">March 12, 2024</small>
+                                    </div>
+                                    <h5 class="card-title">Protecting Your Business: Essential Security Measures</h5>
+                                    <p class="card-text">Learn the key security measures every business should implement
+                                        to
+                                        protect against internal and external threats.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
                                 </div>
-                                <h5 class="card-title">Protecting Your Business: Essential Security Measures</h5>
-                                <p class="card-text">Learn the key security measures every business should implement to
-                                    protect against internal and external threats.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Privacy Laws">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-warning me-2">Legal Updates</span>
-                                    <small class="text-muted">March 8, 2024</small>
-                                </div>
-                                <h5 class="card-title">New Privacy Laws Impacting Investigation Services</h5>
-                                <p class="card-text">Understanding the latest privacy legislation and how it affects
-                                    professional investigation services.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Blog Post">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-success me-2">Investigation Techniques</span>
-                                    <small class="text-muted">March 5, 2024</small>
-                                </div>
-                                <h5 class="card-title">The Art of Digital Forensics in Modern Cases</h5>
-                                <p class="card-text">How digital forensics has revolutionized modern investigation
-                                    techniques and evidence collection.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Missing Person Case">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-primary me-2">Case Study</span>
-                                    <small class="text-muted">March 1, 2024</small>
-                                </div>
-                                <h5 class="card-title">Missing Person Case: Successful Resolution After 3 Years</h5>
-                                <p class="card-text">An anonymous case study of how persistence and advanced techniques
-                                    led to locating a missing person.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Personal Safety">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-info me-2">Security Tips</span>
-                                    <small class="text-muted">February 25, 2024</small>
-                                </div>
-                                <h5 class="card-title">Personal Safety: How to Protect Yourself Online</h5>
-                                <p class="card-text">Essential tips for maintaining personal privacy and security in the
-                                    digital age.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6">
-                        <article class="card h-100">
-                            <img src="https://images.unsplash.com/photo-1557597774-9d2739f8ff19?auto=format&fit=crop&w=400&q=80"
-                                class="card-img-top" alt="Surveillance Technology">
-                            <div class="card-body">
-                                <div class="mb-2">
-                                    <span class="badge bg-success me-2">Investigation Techniques</span>
-                                    <small class="text-muted">February 20, 2024</small>
-                                </div>
-                                <h5 class="card-title">Advanced Surveillance Technologies in 2024</h5>
-                                <p class="card-text">Exploring the latest surveillance technologies and their
-                                    applications in professional investigations.</p>
-                                <a href="blog-details.html" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-
-                <!-- Featured Topics Section -->
-                <section class="py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center mb-5">
-                                <h2 class="display-5 fw-bold">Featured Investigation Topics</h2>
-                                <p class="lead">Explore our most popular investigation insights and case studies</p>
-                            </div>
+                            </article>
                         </div>
-                        <div class="row g-4">
-                            <div class="col-lg-4">
-                                <div class="card h-100">
-                                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=400&q=80"
-                                        class="card-img-top" alt="Digital Forensics"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <span class="badge bg-primary mb-2">Digital Forensics</span>
-                                        <h5 class="card-title">The Rise of Digital Evidence in Modern Investigations
-                                        </h5>
-                                        <p class="card-text">How digital forensics is revolutionizing the investigation
-                                            industry and changing how we gather evidence.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <small class="text-muted">15 articles</small>
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
-                                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Privacy Laws">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-warning me-2">Legal Updates</span>
+                                        <small class="text-muted">March 8, 2024</small>
                                     </div>
+                                    <h5 class="card-title">New Privacy Laws Impacting Investigation Services</h5>
+                                    <p class="card-text">Understanding the latest privacy legislation and how it affects
+                                        professional investigation services.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card h-100">
-                                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80"
-                                        class="card-img-top" alt="Corporate Security"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <span class="badge bg-success mb-2">Corporate Security</span>
-                                        <h5 class="card-title">Protecting Business Assets: Corporate Investigation
-                                            Strategies</h5>
-                                        <p class="card-text">Essential strategies for protecting your business from
-                                            internal and external threats.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <small class="text-muted">23 articles</small>
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
-                                        </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Blog Post">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-success me-2">Investigation Techniques</span>
+                                        <small class="text-muted">March 5, 2024</small>
                                     </div>
+                                    <h5 class="card-title">The Art of Digital Forensics in Modern Cases</h5>
+                                    <p class="card-text">How digital forensics has revolutionized modern investigation
+                                        techniques and evidence collection.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
                                 </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="card h-100">
-                                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80"
-                                        class="card-img-top" alt="Personal Safety"
-                                        style="height: 200px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <span class="badge bg-warning mb-2">Personal Safety</span>
-                                        <h5 class="card-title">Personal Safety: Modern Investigation Techniques</h5>
-                                        <p class="card-text">How modern investigation techniques can help protect you
-                                            and your loved ones.</p>
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <small class="text-muted">18 articles</small>
-                                            <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
-                                        </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Missing Person Case">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-primary me-2">Case Study</span>
+                                        <small class="text-muted">March 1, 2024</small>
                                     </div>
+                                    <h5 class="card-title">Missing Person Case: Successful Resolution After 3 Years</h5>
+                                    <p class="card-text">An anonymous case study of how persistence and advanced
+                                        techniques
+                                        led to locating a missing person.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
                                 </div>
-                            </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Personal Safety">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-info me-2">Security Tips</span>
+                                        <small class="text-muted">February 25, 2024</small>
+                                    </div>
+                                    <h5 class="card-title">Personal Safety: How to Protect Yourself Online</h5>
+                                    <p class="card-text">Essential tips for maintaining personal privacy and security in
+                                        the
+                                        digital age.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6">
+                            <article class="card h-100">
+                                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=400&q=80"
+                                    class="card-img-top" alt="Surveillance Technology">
+                                <div class="card-body d-flex flex-column">
+                                    <div class="mb-2">
+                                        <span class="badge bg-success me-2">Investigation Techniques</span>
+                                        <small class="text-muted">February 20, 2024</small>
+                                    </div>
+                                    <h5 class="card-title">Advanced Surveillance Technologies in 2024</h5>
+                                    <p class="card-text">Exploring the latest surveillance technologies and their
+                                        applications in professional investigations.</p>
+                                    <a href="blog-details.html"
+                                        class="btn btn-outline-primary btn-sm mt-auto align-self-start">Read More</a>
+                                </div>
+                            </article>
                         </div>
                     </div>
-                </section>
 
-                <!-- Expert Contributors Section -->
-                <section class="py-5">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center mb-5">
-                                <h2 class="display-5 fw-bold">Expert Contributors</h2>
-                                <p class="lead">Learn from our team of experienced investigators and security experts
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row g-4">
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card h-100 text-center">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-                                        class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
-                                        style="width: 120px; height: 120px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Michael Chen</h5>
-                                        <p class="text-muted">Fraud Investigation Expert</p>
-                                        <p class="small">15+ years in financial fraud investigation and corporate
-                                            security</p>
-                                        <div class="mb-2">
-                                            <span class="badge bg-primary me-1">Fraud</span>
-                                            <span class="badge bg-secondary">Corporate</span>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
-                                            <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                    </div>
+                    <!-- Featured Topics Section -->
+                    <section class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center mb-5">
+                                    <h2 class="display-5 fw-bold">Featured Investigation Topics</h2>
+                                    <p class="lead">Explore our most popular investigation insights and case studies</p>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card h-100 text-center">
-                                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-                                        class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
-                                        style="width: 120px; height: 120px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Sarah Mitchell</h5>
-                                        <p class="text-muted">Digital Forensics Specialist</p>
-                                        <p class="small">Expert in digital evidence recovery and cyber investigation</p>
-                                        <div class="mb-2">
-                                            <span class="badge bg-info me-1">Digital</span>
-                                            <span class="badge bg-secondary">Forensics</span>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
-                                            <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card h-100 text-center">
-                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-                                        class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
-                                        style="width: 120px; height: 120px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">David Thompson</h5>
-                                        <p class="text-muted">Surveillance Operations Lead</p>
-                                        <p class="small">Specialized in covert surveillance and intelligence gathering
-                                        </p>
-                                        <div class="mb-2">
-                                            <span class="badge bg-success me-1">Surveillance</span>
-                                            <span class="badge bg-secondary">Operations</span>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
-                                            <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="card h-100 text-center">
-                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
-                                        class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
-                                        style="width: 120px; height: 120px; object-fit: cover;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Lisa Rodriguez</h5>
-                                        <p class="text-muted">Legal Investigation Consultant</p>
-                                        <p class="small">Expert in legal support and court testimony preparation</p>
-                                        <div class="mb-2">
-                                            <span class="badge bg-warning me-1">Legal</span>
-                                            <span class="badge bg-secondary">Court</span>
-                                        </div>
-                                        <div class="social-links">
-                                            <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
-                                            <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Newsletter Section -->
-                <section class="py-5 bg-primary text-white">
-                    <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 mb-4">
-                                <h2 class="display-5 fw-bold mb-3">Stay Updated with Investigation Insights</h2>
-                                <p class="lead mb-4">Get the latest investigation tips, case studies, and security
-                                    insights delivered directly to your inbox.</p>
-                                <div class="row">
-                                    <div class="col-6 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-envelope-fill me-2"></i>
-                                            <span>Weekly Newsletter</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-lock-fill me-2"></i>
-                                            <span>100% Private</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-x-circle-fill me-2"></i>
-                                            <span>Unsubscribe Anytime</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 mb-3">
-                                        <div class="d-flex align-items-center">
-                                            <i class="bi bi-gift-fill me-2"></i>
-                                            <span>Exclusive Content</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 mb-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title mb-3">Subscribe to Our Newsletter</h5>
-                                        <form class="newsletter-form">
-                                            <div class="mb-3">
-                                                <label for="subscriberName" class="form-label">Your Name</label>
-                                                <input type="text" class="form-control" id="subscriberName"
-                                                    placeholder="Enter your name" required>
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="card h-100">
+                                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=400&q=80"
+                                            class="card-img-top" alt="Digital Forensics"
+                                            style="height: 200px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <span class="badge bg-primary mb-2">Digital Forensics</span>
+                                            <h5 class="card-title">The Rise of Digital Evidence in Modern Investigations
+                                            </h5>
+                                            <p class="card-text">How digital forensics is revolutionizing the
+                                                investigation
+                                                industry and changing how we gather evidence.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">15 articles</small>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="subscriberEmail" class="form-label">Email Address</label>
-                                                <input type="email" class="form-control" id="subscriberEmail"
-                                                    placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card h-100">
+                                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=400&q=80"
+                                            class="card-img-top" alt="Corporate Security"
+                                            style="height: 200px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <span class="badge bg-success mb-2">Corporate Security</span>
+                                            <h5 class="card-title">Protecting Business Assets: Corporate Investigation
+                                                Strategies</h5>
+                                            <p class="card-text">Essential strategies for protecting your business from
+                                                internal and external threats.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">23 articles</small>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
                                             </div>
-                                            <div class="mb-3">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="termsCheck"
-                                                        required>
-                                                    <label class="form-check-label" for="termsCheck">
-                                                        I agree to receive emails and accept the privacy policy
-                                                    </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card h-100">
+                                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=400&q=80"
+                                            class="card-img-top" alt="Personal Safety"
+                                            style="height: 200px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <span class="badge bg-warning mb-2">Personal Safety</span>
+                                            <h5 class="card-title">Personal Safety: Modern Investigation Techniques</h5>
+                                            <p class="card-text">How modern investigation techniques can help protect
+                                                you
+                                                and your loved ones.</p>
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <small class="text-muted">18 articles</small>
+                                                <a href="#" class="btn btn-sm btn-outline-primary">Explore</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Expert Contributors Section -->
+                    <section class="py-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center mb-5">
+                                    <h2 class="display-5 fw-bold">Expert Contributors</h2>
+                                    <p class="lead">Learn from our team of experienced investigators and security
+                                        experts
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card h-100 text-center">
+                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80"
+                                            class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Michael Chen</h5>
+                                            <p class="text-muted">Fraud Investigation Expert</p>
+                                            <p class="small">15+ years in financial fraud investigation and corporate
+                                                security</p>
+                                            <div class="mb-2">
+                                                <span class="badge bg-primary me-1">Fraud</span>
+                                                <span class="badge bg-secondary">Corporate</span>
+                                            </div>
+                                            <div class="social-links">
+                                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card h-100 text-center">
+                                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80"
+                                            class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sarah Mitchell</h5>
+                                            <p class="text-muted">Digital Forensics Specialist</p>
+                                            <p class="small">Expert in digital evidence recovery and cyber investigation
+                                            </p>
+                                            <div class="mb-2">
+                                                <span class="badge bg-info me-1">Digital</span>
+                                                <span class="badge bg-secondary">Forensics</span>
+                                            </div>
+                                            <div class="social-links">
+                                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card h-100 text-center">
+                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80"
+                                            class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">David Thompson</h5>
+                                            <p class="text-muted">Surveillance Operations Lead</p>
+                                            <p class="small">Specialized in covert surveillance and intelligence
+                                                gathering
+                                            </p>
+                                            <div class="mb-2">
+                                                <span class="badge bg-success me-1">Surveillance</span>
+                                                <span class="badge bg-secondary">Operations</span>
+                                            </div>
+                                            <div class="social-links">
+                                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="card h-100 text-center">
+                                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80"
+                                            class="card-img-top rounded-circle mx-auto mt-3" alt="Expert"
+                                            style="width: 120px; height: 120px; object-fit: cover;">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lisa Rodriguez</h5>
+                                            <p class="text-muted">Legal Investigation Consultant</p>
+                                            <p class="small">Expert in legal support and court testimony preparation</p>
+                                            <div class="mb-2">
+                                                <span class="badge bg-warning me-1">Legal</span>
+                                                <span class="badge bg-secondary">Court</span>
+                                            </div>
+                                            <div class="social-links">
+                                                <a href="#" class="text-primary me-2"><i class="bi bi-linkedin"></i></a>
+                                                <a href="#" class="text-primary"><i class="bi bi-twitter"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Newsletter Section -->
+                    <section class="py-5 bg-primary text-white">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 mb-4">
+                                    <h2 class="display-5 fw-bold mb-3">Stay Updated with Investigation Insights</h2>
+                                    <p class="lead mb-4">Get the latest investigation tips, case studies, and security
+                                        insights delivered directly to your inbox.</p>
+                                    <div class="row">
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-envelope-fill me-2"></i>
+                                                <span>Weekly Newsletter</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-lock-fill me-2"></i>
+                                                <span>100% Private</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-x-circle-fill me-2"></i>
+                                                <span>Unsubscribe Anytime</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 mb-3">
+                                            <div class="d-flex align-items-center">
+                                                <i class="bi bi-gift-fill me-2"></i>
+                                                <span>Exclusive Content</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mb-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title mb-3">Subscribe to Our Newsletter</h5>
+                                            <form class="newsletter-form">
+                                                <div class="mb-3">
+                                                    <label for="subscriberName" class="form-label">Your Name</label>
+                                                    <input type="text" class="form-control" id="subscriberName"
+                                                        placeholder="Enter your name" required>
                                                 </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary w-100">
-                                                <i class="bi bi-send me-2"></i>Subscribe Now
-                                            </button>
-                                        </form>
+                                                <div class="mb-3">
+                                                    <label for="subscriberEmail" class="form-label">Email
+                                                        Address</label>
+                                                    <input type="email" class="form-control" id="subscriberEmail"
+                                                        placeholder="Enter your email" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="termsCheck"
+                                                            required>
+                                                        <label class="form-check-label" for="termsCheck">
+                                                            I agree to receive emails and accept the privacy policy
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary w-100">
+                                                    <i class="bi bi-send me-2"></i>Subscribe Now
+                                                </button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Pagination -->
-                <nav aria-label="Blog pagination" class="mt-5">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                    <!-- Pagination -->
+                    <nav aria-label="Blog pagination" class="mt-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
         </section>
     </main>
 

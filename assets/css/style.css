@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
 /* Private Investigator Agency - Modern Stylish CSS */
 :root {
     --primary-color: #0a0e27;
@@ -516,12 +518,12 @@ input[type="submit"] {
     0%,
     100% {
         transform: scale(1);
-        opacity: 0.3;
+        opacity: 0.8;
     }
 
     50% {
-        transform: scale(1.05);
-        opacity: 0.5;
+        transform: scale(1.1);
+        opacity: 1;
     }
 }
 
@@ -1395,7 +1397,9 @@ input[type="submit"] {
 
 [data-theme="light"] body,
 [data-theme="light"] html,
-[data-theme="light"] * {
+/* Removed aggressive universal selector to fix icon visibility */
+[data-theme="light"] body,
+[data-theme="light"] html {
     color: #000000 !important;
 }
 
@@ -1516,9 +1520,9 @@ input[type="submit"] {
     --text-muted: #cccccc !important;
 }
 
+/* Removed aggressive universal selector to fix icon visibility */
 [data-theme="dark"] body,
-[data-theme="dark"] html,
-[data-theme="dark"] * {
+[data-theme="dark"] html {
     color: #ffffff !important;
 }
 
@@ -3108,6 +3112,410 @@ h6 {
     }
 }
 
+/* Issue 2 hard override after all rules */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        width: min(420px, 78vw) !important;
+        height: 100vh !important;
+        transform: translateX(100%) !important;
+        visibility: hidden !important;
+        display: block !important;
+        background: rgba(10, 14, 39, 0.97) !important;
+        border-left: 1px solid rgba(212, 175, 55, 0.28) !important;
+        box-shadow: -18px 0 38px rgba(0, 0, 0, 0.45) !important;
+        z-index: 1058 !important;
+    }
+
+    [data-theme="light"] .navbar-expand-lg .offcanvas-lg {
+        background: rgba(255, 255, 255, 0.98) !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg.showing,
+    .navbar-expand-lg .offcanvas-lg.show {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-header {
+        display: flex !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-body {
+        display: block !important;
+        padding: 1rem 1.8rem 2rem !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        width: 100%;
+    }
+}
+
+/* Final override for Issue 2 (1024px navbar break) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        width: min(420px, 78vw) !important;
+        height: 100vh !important;
+        transform: translateX(100%) !important;
+        visibility: hidden !important;
+        display: block !important;
+        background: rgba(10, 14, 39, 0.97) !important;
+        border-left: 1px solid rgba(212, 175, 55, 0.28) !important;
+        box-shadow: -18px 0 38px rgba(0, 0, 0, 0.45) !important;
+        z-index: 1058 !important;
+    }
+
+    [data-theme="light"] .navbar-expand-lg .offcanvas-lg {
+        background: rgba(255, 255, 255, 0.98) !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg.showing,
+    .navbar-expand-lg .offcanvas-lg.show {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-header {
+        display: flex !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-body {
+        display: block !important;
+        padding: 1rem 1.8rem 2rem !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        width: 100%;
+    }
+}
+
+/* === Client Review Sequential Fixes (Issues 2-14, 22, 25, 26, 29, 30) === */
+
+/* Issue 2: keep navbar stable at ~1024px by using offcanvas mode earlier */
+@media (max-width: 1199.98px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        width: min(420px, 78vw) !important;
+        height: 100vh !important;
+        transform: translateX(100%) !important;
+        visibility: hidden !important;
+        background: rgba(10, 14, 39, 0.97) !important;
+        border-left: 1px solid rgba(212, 175, 55, 0.28) !important;
+        box-shadow: -18px 0 38px rgba(0, 0, 0, 0.45) !important;
+        z-index: 1058 !important;
+        transition: transform 0.35s ease, visibility 0.35s ease !important;
+        display: block !important;
+    }
+
+    [data-theme="light"] .navbar-expand-lg .offcanvas-lg {
+        background: rgba(255, 255, 255, 0.98) !important;
+        box-shadow: -18px 0 38px rgba(0, 0, 0, 0.16) !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg.showing,
+    .navbar-expand-lg .offcanvas-lg.show {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-header {
+        display: flex !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-body {
+        display: block !important;
+        padding: 1rem 1.8rem 2rem !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        width: 100%;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav .nav-item,
+    .navbar-expand-lg .offcanvas-lg .navbar-nav .btn {
+        width: 100%;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav .nav-link,
+    .navbar-expand-lg .offcanvas-lg .navbar-nav .btn {
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: none !important;
+    }
+}
+
+/* Issues 3-9 + 12-14: hero alignment, spacing, readability across devices */
+.page-home .hero-content .btn,
+.page-home-alt .hero-content .btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.page-home .hero-content .hero-highlights+.d-flex,
+.page-home-alt .hero-content p+.d-flex {
+    margin-top: 1.25rem;
+}
+
+.page-home .hero-content .btn-outline-primary:hover,
+.page-home-alt .hero-content .btn-outline-light:hover {
+    background: #d4af37 !important;
+    border-color: #d4af37 !important;
+    color: #0a0e27 !important;
+}
+
+.page-home .hero-content .btn:hover,
+.page-home-alt .hero-content .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1199.98px) {
+
+    .page-home .hero-content,
+    .page-home-alt .hero-content {
+        text-align: center;
+    }
+
+    .page-home .hero-highlights,
+    .page-home-alt .hero-highlights {
+        justify-content: center;
+    }
+
+    .page-home .hero-content .d-flex,
+    .page-home-alt .hero-content .d-flex {
+        justify-content: center;
+        gap: 1rem !important;
+    }
+
+    .page-home .hero-content .btn,
+    .page-home-alt .hero-content .btn {
+        min-width: 220px;
+        justify-content: center;
+    }
+
+    .page-home .hero-content .mt-4 .d-flex {
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    .page-home .hero-title,
+    .page-home-alt .hero-title {
+        font-size: clamp(1.7rem, 8vw, 2.4rem) !important;
+        line-height: 1.2 !important;
+        overflow-wrap: anywhere;
+    }
+
+    .page-home .hero-subtitle,
+    .page-home-alt .hero-subtitle {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+    }
+
+    .page-home .hero-content .d-flex,
+    .page-home-alt .hero-content .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-home .hero-content .btn,
+    .page-home-alt .hero-content .btn {
+        width: 100%;
+        max-width: 290px;
+    }
+}
+
+[data-theme="light"] .page-home .hero-section .hero-title,
+[data-theme="light"] .page-home .hero-section .hero-subtitle,
+[data-theme="light"] .page-home .hero-section small,
+[data-theme="light"] .page-home .hero-section p,
+[data-theme="light"] .page-home-alt .hero-corporate .hero-title,
+[data-theme="light"] .page-home-alt .hero-corporate .hero-subtitle {
+    color: #f8fafc !important;
+    background: none !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+[data-theme="light"] .page-home .hero-section .btn-primary {
+    color: #0a0e27 !important;
+}
+
+[data-theme="light"] .page-home .hero-section .btn-outline-primary,
+[data-theme="light"] .page-home-alt .hero-corporate .btn-outline-light {
+    color: #f8f9fa !important;
+    border-color: #f8f9fa !important;
+}
+
+[data-theme="light"] .page-home .hero-section .btn-outline-primary:hover,
+[data-theme="light"] .page-home-alt .hero-corporate .btn-outline-light:hover {
+    background: #d4af37 !important;
+    border-color: #d4af37 !important;
+    color: #0a0e27 !important;
+}
+
+/* Issues 10-11: footer logo/social visibility */
+.footer .footer-brand a {
+    color: #f4e4a6 !important;
+}
+
+.footer .footer-brand i {
+    color: #d4af37 !important;
+    opacity: 1 !important;
+}
+
+.footer .social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+}
+
+.footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 999px;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    background: rgba(255, 255, 255, 0.06);
+    color: #f8f9fa !important;
+}
+
+.footer .social-links a:hover {
+    background: #d4af37;
+    color: #0a0e27 !important;
+}
+
+/* Issue 22: blog alignment consistency */
+.page-blog #blogGrid {
+    align-items: stretch;
+}
+
+.page-blog .featured-post .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.page-blog .featured-post .card-body>.d-flex:last-child {
+    margin-top: auto;
+}
+
+/* Issue 25: contact page submit actions centered on all viewports */
+.page-contact .contact-form-actions {
+    justify-content: center !important;
+}
+
+.page-contact .contact-form-actions .btn {
+    min-width: 160px;
+}
+
+/* Issue 26: service button hover states */
+.page-services .services-grid .btn,
+.page-services .service-packages .btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.page-services .services-grid .btn:hover,
+.page-services .service-packages .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+}
+
+.page-services .services-grid .btn-primary:hover,
+.page-services .service-packages .btn-primary:hover {
+    background: #d4af37 !important;
+    border-color: #d4af37 !important;
+    color: #0a0e27 !important;
+}
+
+/* Issue 29: show Login as a button in navbar */
+.navbar .navbar-nav .nav-link[href="login.html"] {
+    border: 1px solid rgba(212, 175, 55, 0.65);
+    border-radius: 999px;
+    padding: 0.45rem 0.95rem !important;
+    margin-left: 0.35rem;
+    color: #d4af37 !important;
+    line-height: 1.2;
+}
+
+.navbar .navbar-nav .nav-link[href="login.html"]::after {
+    display: none;
+}
+
+.navbar .navbar-nav .nav-link[href="login.html"]:hover,
+.navbar .navbar-nav .nav-link[href="login.html"].active {
+    background: #d4af37 !important;
+    border-color: #d4af37 !important;
+    color: #0a0e27 !important;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 1199.98px) {
+    .navbar .offcanvas-body .nav-link[href="login.html"] {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto !important;
+        padding: 0.55rem 1.1rem !important;
+        margin-top: 0.25rem;
+    }
+}
+
+/* Issue 30: improve theme symbol visibility in dark mode */
+[data-theme="dark"] .theme-toggle {
+    background: linear-gradient(135deg, #f4e4a6 0%, #d4af37 100%) !important;
+    border-color: #f4e4a6 !important;
+}
+
+[data-theme="dark"] .theme-toggle i {
+    color: #0a0e27 !important;
+    opacity: 1 !important;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.4);
+}
+
+[data-theme="dark"] .menu-theme-toggle.theme-toggle {
+    box-shadow: 0 0 0 2px rgba(10, 14, 39, 0.3) !important;
+}
+
 /* === Layout + Responsive Fixes (Feb 2026) === */
 .navbar {
     z-index: 1035;
@@ -3765,5 +4173,415 @@ h6 {
         height: 50px;
         top: 20px;
         right: 20px;
+    }
+}
+
+/* Issue 2 hard override after all rules */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .navbar-expand-lg .navbar-toggler {
+        display: block !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        left: auto !important;
+        width: min(420px, 78vw) !important;
+        height: 100vh !important;
+        transform: translateX(100%) !important;
+        visibility: hidden !important;
+        display: block !important;
+        background: rgba(10, 14, 39, 0.97) !important;
+        border-left: 1px solid rgba(212, 175, 55, 0.28) !important;
+        box-shadow: -18px 0 38px rgba(0, 0, 0, 0.45) !important;
+        z-index: 1058 !important;
+    }
+
+    [data-theme="light"] .navbar-expand-lg .offcanvas-lg {
+        background: rgba(255, 255, 255, 0.98) !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg.showing,
+    .navbar-expand-lg .offcanvas-lg.show {
+        transform: translateX(0) !important;
+        visibility: visible !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-header {
+        display: flex !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .offcanvas-body {
+        display: block !important;
+        padding: 1rem 1.8rem 2rem !important;
+    }
+
+    .navbar-expand-lg .offcanvas-lg .navbar-nav {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.75rem !important;
+        width: 100%;
+    }
+}
+
+/* ========================================================================== 
+   FOOTER SECTION FIXES (CONSISTENCY & VISIBILITY) 
+   ========================================================================== */
+
+.footer,
+[data-theme='light'] .footer,
+[data-theme='dark'] .footer {
+    background: #050714 !important;
+    /* Rich deep dark background */
+    color: #e8e8e8 !important;
+    padding: 80px 0 40px !important;
+    margin-top: 100px !important;
+    border-top: 3px solid #d4af37 !important;
+    position: relative !important;
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif !important;
+}
+
+.footer *,
+[data-theme='light'] .footer *,
+[data-theme='dark'] .footer * {
+    font-family: 'Inter', 'Segoe UI', Roboto, sans-serif !important;
+}
+
+/* Brand and Logo Fix */
+.footer .footer-brand a,
+.footer .footer-brand a i,
+[data-theme='light'] .footer .footer-brand a,
+[data-theme='light'] .footer .footer-brand a i,
+[data-theme='dark'] .footer .footer-brand a,
+[data-theme='dark'] .footer .footer-brand a i {
+    color: #d4af37 !important;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+}
+
+/* Footer Headings */
+.footer h5,
+[data-theme='light'] .footer h5,
+[data-theme='dark'] .footer h5 {
+    color: #d4af37 !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Footer Text & Paragraphs */
+.footer p,
+[data-theme='light'] .footer p,
+[data-theme='dark'] .footer p {
+    color: #a8b2d1 !important;
+    line-height: 1.8 !important;
+    font-size: 0.95rem !important;
+}
+
+/* Footer Links */
+.footer a,
+[data-theme='light'] .footer a,
+[data-theme='dark'] .footer a {
+    color: #e8e8e8 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    font-weight: 500 !important;
+    display: inline-block !important;
+}
+
+.footer li a {
+    margin-bottom: 12px !important;
+}
+
+.footer a:hover,
+[data-theme='light'] .footer a:hover,
+[data-theme='dark'] .footer a:hover {
+    color: #d4af37 !important;
+    transform: translateX(8px) !important;
+}
+
+/* Social Links */
+.footer .social-links a,
+[data-theme='light'] .footer .social-links a,
+[data-theme='dark'] .footer .social-links a {
+    color: #ffffff !important;
+    background: rgba(212, 175, 55, 0.1) !important;
+    width: 40px !important;
+    height: 40px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+    margin-right: 12px !important;
+    transform: none !important;
+    /* Reset translateX from above */
+}
+
+.footer .social-links a:hover {
+    background: #d4af37 !important;
+    color: #050714 !important;
+    transform: translateY(-5px) !important;
+    border-color: #d4af37 !important;
+}
+
+/* Newsletter Form Fixes */
+.footer .newsletter-form .form-control {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(212, 175, 55, 0.2) !important;
+    border-radius: 8px !important;
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+}
+
+.footer .newsletter-form .form-control::placeholder {
+    color: #666e8c !important;
+}
+
+.footer .newsletter-form .btn {
+    background: #d4af37 !important;
+    border: 1px solid #d4af37 !important;
+    color: #050714 !important;
+    font-weight: 700 !important;
+    padding: 0 25px !important;
+    border-radius: 0 8px 8px 0 !important;
+}
+
+.footer .newsletter-form .btn:hover {
+    background: #f4e4a6 !important;
+    border-color: #f4e4a6 !important;
+}
+
+/* Copyright Section */
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    margin: 40px 0 30px !important;
+    opacity: 1 !important;
+}
+
+.footer .copyright-text,
+.footer .text-center p {
+    color: #666e8c !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* ========================================================================== 
+   FORCE VISIBILITY FOR LOGOS AND SOCIAL ICONS 
+   ========================================================================== */
+
+/* Force Logo Icons to be Gold in Header & Footer */
+.navbar-brand i,
+.footer-brand i,
+.footer-brand a i,
+[data-theme='light'] .navbar-brand i,
+[data-theme='light'] .footer-brand i,
+[data-theme='light'] .footer-brand a i {
+    color: #d4af37 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+/* Force Social Media Icons to be White and Visible */
+.footer .social-links a i,
+[data-theme='light'] .footer .social-links a i,
+[data-theme='dark'] .footer .social-links a i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+/* Improve Social Link Circle Background in light mode footer */
+[data-theme='light'] .footer .social-links a {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 1px solid rgba(212, 175, 55, 0.3) !important;
+}
+
+[data-theme='light'] .footer .social-links a:hover {
+    background: #d4af37 !important;
+}
+
+/* ULTIMATE LOGO & ICON FIX */
+.navbar-brand i,
+.navbar-brand .bi,
+.footer-brand i,
+.footer-brand .bi,
+.footer-brand a i,
+each-page-logo i {
+    color: #d4af37 !important;
+    font-style: normal !important;
+    display: inline-block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.footer .social-links a,
+.footer .social-links a i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.footer .social-links a {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.footer .social-links a:hover {
+    background: #d4af37 !important;
+    color: #050714 !important;
+    transform: translateY(-3px) !important;
+}
+
+.footer .social-links a:hover i {
+    color: #050714 !important;
+}
+/* Home 2 Fixes */ 
+.bg-dark-custom { 
+    background-color: #1a1f2e !important; 
+} 
+ 
+.bg-deep-dark { 
+    background-color: #0d1117 !important; 
+} 
+ 
+.bg-dark-gradient { 
+    background: linear-gradient(135deg, #1a1f2e 0%, #2d3748 100%) !important; 
+} 
+ 
+/* Force White Text on Dark Sections even in Light Mode */ 
+.bg-dark-custom, 
+.bg-deep-dark, 
+.bg-dark-gradient, 
+.hero-corporate { 
+    color: #ffffff !important; 
+} 
+ 
+[data-theme='light'] .bg-dark-custom *, 
+[data-theme='light'] .bg-deep-dark *, 
+[data-theme='light'] .bg-dark-gradient *, 
+[data-theme='light'] .hero-corporate * { 
+    color: #ffffff !important; 
+} 
+ 
+[data-theme='light'] .bg-dark-custom .text-gold, 
+[data-theme='light'] .bg-deep-dark .text-gold, 
+[data-theme='light'] .bg-dark-gradient .text-gold, 
+[data-theme='light'] .hero-corporate .text-gold { 
+    color: #d4af37 !important; 
+} 
+ 
+[data-theme='light'] .bg-dark-custom .text-muted, 
+[data-theme='light'] .bg-deep-dark .text-muted, 
+[data-theme='light'] .bg-dark-gradient .text-muted, 
+[data-theme='light'] .hero-corporate .text-muted { 
+    color: rgba(255, 255, 255, 0.7) !important; 
+} 
+
+
+/* Fix White Text on White Card Issue in Light Mode */ 
+[data-theme='light'] .premium-card { 
+    background: #ffffff !important; 
+} 
+ 
+[data-theme='light'] .premium-card .card-body *, 
+[data-theme='light'] .premium-card p, 
+[data-theme='light'] .premium-card li, 
+[data-theme='light'] .premium-card h4.card-title { 
+    color: #1a1a1a !important; 
+} 
+ 
+[data-theme='light'] .premium-card .text-gold, 
+[data-theme='light'] .premium-card i.text-gold { 
+    color: #d4af37 !important; 
+} 
+ 
+[data-theme='light'] .premium-card .btn-gold { 
+    color: #0a0e27 !important; 
+} 
+
+
+/* FORCE THEME TOGGLE ICON VISIBILITY - CRITICAL FIX */
+[data-theme='dark'] .theme-toggle,
+[data-theme='dark'] .menu-theme-toggle {
+    color: #0a0e27 !important;
+}
+
+[data-theme='dark'] .theme-toggle i,
+[data-theme='dark'] .menu-theme-toggle i,
+[data-theme='dark'] .theme-toggle .bi,
+[data-theme='dark'] .menu-theme-toggle .bi {
+    color: #0a0e27 !important;
+    fill: #0a0e27 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Hero Alignment Fixes (Tablet/Mobile) */
+.page-home .hero-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+.page-home .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 991.98px) {
+    .page-home .hero-title {
+        font-size: 2.8rem !important;
+        text-align: center;
+    }
+    .page-home .hero-subtitle {
+        font-size: 1.3rem !important;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .page-home .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page-home .hero-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+    .hero-content .mt-4 .d-flex {
+        justify-content: center;
+    }
+    .page-home .hero-highlights {
+        justify-content: center;
+    }
+    .page-home .hero-stats {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
     }
 }
