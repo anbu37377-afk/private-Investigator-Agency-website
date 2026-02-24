@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
-/* Private Investigator Agency - Modern Stylish CSS */
+/* Shadow Agency - Modern Stylish CSS */
 :root {
     --primary-color: #0a0e27;
     --secondary-color: #1e3a5f;
@@ -169,7 +169,7 @@ html {
 
 [data-theme="light"] .navbar .btn-outline-primary:hover {
     background: var(--primary-color) !important;
-    color: var(--text-light) !important;
+    color: #ffffff !important;
 }
 
 .navbar-nav .nav-item:last-child .nav-link,
@@ -466,8 +466,8 @@ input[type="submit"] {
 }
 
 .offcanvas .menu-theme-toggle.theme-toggle {
-    margin-top: 8px;
-    margin-left: 0 !important;
+    margin-top: 0;
+    margin-left: 0.5rem !important;
 }
 
 .theme-toggle:hover {
@@ -3656,15 +3656,16 @@ h6 {
     .offcanvas-header .btn-close {
         background-color: var(--accent-color) !important;
         opacity: 1;
-        padding: 0.8rem;
+        padding: 1rem;
         border-radius: 50%;
         margin: 0;
         transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230a0e27'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3csvg%3e") !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23050714'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") !important;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 1rem;
+        background-size: 0.8rem;
         box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+        border: 2px solid rgba(255, 255, 255, 0.2) !important;
     }
 
     .offcanvas-header .btn-close:hover {
@@ -3866,6 +3867,18 @@ h6 {
     height: 100%;
 }
 
+.page-services .services-grid .card>.row.g-0 {
+    height: 100%;
+}
+
+.page-services .services-grid .card>.row.g-0>.col-md-8 {
+    display: flex;
+}
+
+.page-services .services-grid .card>.row.g-0>.col-md-8 .card-body {
+    flex: 1;
+}
+
 .page-services .services-grid .card-body .btn,
 .page-services .service-packages .card-body .btn {
     margin-top: auto;
@@ -3881,6 +3894,16 @@ h6 {
     background: var(--gradient-2) !important;
     border-color: transparent !important;
     color: var(--primary-color) !important;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .page-services .section-title,
+    .page-services .display-5 {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center !important;
+    }
 }
 
 .page-pricing .pricing-cards .card-footer {
@@ -4453,69 +4476,70 @@ each-page-logo i {
 .footer .social-links a:hover i {
     color: #050714 !important;
 }
-/* Home 2 Fixes */ 
-.bg-dark-custom { 
-    background-color: #1a1f2e !important; 
-} 
- 
-.bg-deep-dark { 
-    background-color: #0d1117 !important; 
-} 
- 
-.bg-dark-gradient { 
-    background: linear-gradient(135deg, #1a1f2e 0%, #2d3748 100%) !important; 
-} 
- 
-/* Force White Text on Dark Sections even in Light Mode */ 
-.bg-dark-custom, 
-.bg-deep-dark, 
-.bg-dark-gradient, 
-.hero-corporate { 
-    color: #ffffff !important; 
-} 
- 
-[data-theme='light'] .bg-dark-custom *, 
-[data-theme='light'] .bg-deep-dark *, 
-[data-theme='light'] .bg-dark-gradient *, 
-[data-theme='light'] .hero-corporate * { 
-    color: #ffffff !important; 
-} 
- 
-[data-theme='light'] .bg-dark-custom .text-gold, 
-[data-theme='light'] .bg-deep-dark .text-gold, 
-[data-theme='light'] .bg-dark-gradient .text-gold, 
-[data-theme='light'] .hero-corporate .text-gold { 
-    color: #d4af37 !important; 
-} 
- 
-[data-theme='light'] .bg-dark-custom .text-muted, 
-[data-theme='light'] .bg-deep-dark .text-muted, 
-[data-theme='light'] .bg-dark-gradient .text-muted, 
-[data-theme='light'] .hero-corporate .text-muted { 
-    color: rgba(255, 255, 255, 0.7) !important; 
-} 
+
+/* Home 2 Fixes */
+.bg-dark-custom {
+    background-color: #1a1f2e !important;
+}
+
+.bg-deep-dark {
+    background-color: #0d1117 !important;
+}
+
+.bg-dark-gradient {
+    background: linear-gradient(135deg, #1a1f2e 0%, #2d3748 100%) !important;
+}
+
+/* Force White Text on Dark Sections even in Light Mode */
+.bg-dark-custom,
+.bg-deep-dark,
+.bg-dark-gradient,
+.hero-corporate {
+    color: #ffffff !important;
+}
+
+[data-theme='light'] .bg-dark-custom *,
+[data-theme='light'] .bg-deep-dark *,
+[data-theme='light'] .bg-dark-gradient *,
+[data-theme='light'] .hero-corporate * {
+    color: #ffffff !important;
+}
+
+[data-theme='light'] .bg-dark-custom .text-gold,
+[data-theme='light'] .bg-deep-dark .text-gold,
+[data-theme='light'] .bg-dark-gradient .text-gold,
+[data-theme='light'] .hero-corporate .text-gold {
+    color: #d4af37 !important;
+}
+
+[data-theme='light'] .bg-dark-custom .text-muted,
+[data-theme='light'] .bg-deep-dark .text-muted,
+[data-theme='light'] .bg-dark-gradient .text-muted,
+[data-theme='light'] .hero-corporate .text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
 
 
-/* Fix White Text on White Card Issue in Light Mode */ 
-[data-theme='light'] .premium-card { 
-    background: #ffffff !important; 
-} 
- 
-[data-theme='light'] .premium-card .card-body *, 
-[data-theme='light'] .premium-card p, 
-[data-theme='light'] .premium-card li, 
-[data-theme='light'] .premium-card h4.card-title { 
-    color: #1a1a1a !important; 
-} 
- 
-[data-theme='light'] .premium-card .text-gold, 
-[data-theme='light'] .premium-card i.text-gold { 
-    color: #d4af37 !important; 
-} 
- 
-[data-theme='light'] .premium-card .btn-gold { 
-    color: #0a0e27 !important; 
-} 
+/* Fix White Text on White Card Issue in Light Mode */
+[data-theme='light'] .premium-card {
+    background: #ffffff !important;
+}
+
+[data-theme='light'] .premium-card .card-body *,
+[data-theme='light'] .premium-card p,
+[data-theme='light'] .premium-card li,
+[data-theme='light'] .premium-card h4.card-title {
+    color: #1a1a1a !important;
+}
+
+[data-theme='light'] .premium-card .text-gold,
+[data-theme='light'] .premium-card i.text-gold {
+    color: #d4af37 !important;
+}
+
+[data-theme='light'] .premium-card .btn-gold {
+    color: #0a0e27 !important;
+}
 
 
 /* FORCE THEME TOGGLE ICON VISIBILITY - CRITICAL FIX */
@@ -4557,31 +4581,208 @@ each-page-logo i {
         font-size: 2.8rem !important;
         text-align: center;
     }
+
     .page-home .hero-subtitle {
         font-size: 1.3rem !important;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
     }
+
     .page-home .hero-content {
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .page-home .hero-buttons {
         justify-content: center;
         width: 100%;
     }
+
     .hero-content .mt-4 .d-flex {
         justify-content: center;
     }
+
     .page-home .hero-highlights {
         justify-content: center;
     }
+
     .page-home .hero-stats {
         margin-left: auto;
         margin-right: auto;
         max-width: 500px;
     }
 }
+
+/* === Home 1 Hero Button Fixes === */
+.btn-hero-primary {
+    background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%) !important;
+    border: none !important;
+    color: #0a0e27 !important;
+    /* Dark text for better contrast on gold */
+    font-weight: 700 !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    text-decoration: none !important;
+}
+
+.btn-hero-primary:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4) !important;
+    background: linear-gradient(135deg, #f4e4a6 0%, #d4af37 100%) !important;
+    color: #0a0e27 !important;
+}
+
+.btn-hero-outline {
+    border: 2px solid #d4af37 !important;
+    color: #d4af37 !important;
+    font-weight: 700 !important;
+    padding: 12px 30px !important;
+    border-radius: 50px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    background: transparent !important;
+    transition: all 0.3s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    text-decoration: none !important;
+}
+
+.btn-hero-outline:hover {
+    background: #d4af37 !important;
+    color: #0a0e27 !important;
+    /* FIX: Dark text on gold background for visibility */
+    transform: translateY(-3px) !important;
+    box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4) !important;
+}
+
+.btn-hero-outline:hover i {
+    color: #0a0e27 !important;
+}
+
+/* Fix for buttons where text becomes invisible on hover (especially in dark sections) */
+.btn-outline-light:hover,
+.btn-light:hover,
+.btn-white:hover {
+    color: #0a0e27 !important;
+}
+
+/* Ensure icons inside these buttons also adopt the dark color on hover */
+.btn-outline-light:hover i,
+.btn-light:hover i,
+.btn-white:hover i {
+    color: #0a0e27 !important;
+}
+
+/* Specific fix for buttons inside dark sections that might have aggressive text-color overrides */
+.bg-dark-custom .btn:hover,
+.bg-deep-dark .btn:hover,
+.bg-dark-gradient .btn:hover,
+.hero-corporate .btn:hover {
+    color: #0a0e27 !important;
+}
+
+/* Light-mode brand logo color consistency */
+[data-theme='light'] .navbar-brand,
+[data-theme='light'] .navbar-brand i,
+[data-theme='light'] .footer .footer-brand,
+[data-theme='light'] .footer .footer-brand a,
+[data-theme='light'] .footer .footer-brand i,
+[data-theme='light'] .auth-brand,
+[data-theme='light'] .auth-brand .auth-brand-text,
+[data-theme='light'] .auth-brand .auth-brand-icon,
+[data-theme='light'] .page-dashboard .sidebar-brand h5,
+[data-theme='light'] .page-dashboard .sidebar-brand i {
+    color: #d4af37 !important;
+}
+
+/* Light-mode footer color fix (all pages) */
+[data-theme='light'] .footer {
+    background: #f8fafc !important;
+    color: #1a1a1a !important;
+    border-top: 3px solid #d4af37 !important;
+}
+
+[data-theme='light'] .footer::before {
+    background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%) !important;
+}
+
+[data-theme='light'] .footer h5,
+[data-theme='light'] .footer .footer-brand,
+[data-theme='light'] .footer .footer-brand a,
+[data-theme='light'] .footer .footer-brand i {
+    color: #d4af37 !important;
+}
+
+[data-theme='light'] .footer p,
+[data-theme='light'] .footer span,
+[data-theme='light'] .footer div,
+[data-theme='light'] .footer .text-muted,
+[data-theme='light'] .footer .copyright-text,
+[data-theme='light'] .footer .text-center p {
+    color: #4a5568 !important;
+}
+
+[data-theme='light'] .footer a,
+[data-theme='light'] .footer .list-unstyled a {
+    color: #1a1a1a !important;
+}
+
+[data-theme='light'] .footer a:hover,
+[data-theme='light'] .footer .list-unstyled a:hover {
+    color: #d4af37 !important;
+}
+
+[data-theme='light'] .footer hr {
+    border-top: 1px solid rgba(26, 26, 26, 0.15) !important;
+}
+
+[data-theme='light'] .footer .social-links a {
+    color: #1a1a1a !important;
+    background: rgba(212, 175, 55, 0.14) !important;
+    border: 1px solid rgba(212, 175, 55, 0.35) !important;
+}
+
+[data-theme='light'] .footer .social-links a i {
+    color: #1a1a1a !important;
+}
+
+[data-theme='light'] .footer .social-links a:hover {
+    background: #d4af37 !important;
+    color: #050714 !important;
+}
+
+[data-theme='light'] .footer .social-links a:hover i {
+    color: #050714 !important;
+}
+
+[data-theme='light'] .footer .newsletter-form .form-control {
+    background: #ffffff !important;
+    border: 1px solid rgba(212, 175, 55, 0.45) !important;
+    color: #1a1a1a !important;
+}
+
+[data-theme='light'] .footer .newsletter-form .form-control::placeholder {
+    color: #718096 !important;
+}
+
+/* Footer brand text should match header logo text size/weight/family */
+.footer .footer-brand a,
+[data-theme='light'] .footer .footer-brand a,
+[data-theme='dark'] .footer .footer-brand a {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.3px !important;
+    line-height: 1.1 !important;
+}
+

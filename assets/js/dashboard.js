@@ -1,4 +1,4 @@
-// Private Investigator Agency - Dashboard JavaScript
+// Shadow Agency - Dashboard JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Sidebar Toggle
@@ -49,6 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Chart Initialization
     initializeCharts();
+
+    // Rebuild dashboard charts after theme changes so labels stay readable.
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.addEventListener('click', function() {
+            setTimeout(initializeCharts, 0);
+        });
+    }
     
     // Data Tables
     initializeDataTables();
@@ -63,19 +71,43 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeNotifications();
 });
 
+let analyticsChartInstance = null;
+
+function getDashboardChartTheme() {
+    const theme = document.documentElement.getAttribute('data-theme') || 'dark';
+    if (theme === 'light') {
+        return {
+            text: '#1a1a1a',
+            grid: 'rgba(26, 26, 26, 0.12)',
+            line: '#1a1f2e',
+            fill: 'rgba(26, 31, 46, 0.10)'
+        };
+    }
+    return {
+        text: '#e8e8e8',
+        grid: 'rgba(255, 255, 255, 0.14)',
+        line: '#d4af37',
+        fill: 'rgba(212, 175, 55, 0.14)'
+    };
+}
+
 function initializeCharts() {
     // Analytics Chart
     const analyticsCtx = document.getElementById('analyticsChart');
     if (analyticsCtx) {
-        new Chart(analyticsCtx, {
+        const chartTheme = getDashboardChartTheme();
+        if (analyticsChartInstance) {
+            analyticsChartInstance.destroy();
+        }
+        analyticsChartInstance = new Chart(analyticsCtx, {
             type: 'line',
             data: {
                 labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
                 datasets: [{
                     label: 'Cases',
                     data: [12, 19, 3, 5, 2, 3],
-                    borderColor: '#1a1f2e',
-                    backgroundColor: 'rgba(26, 31, 46, 0.1)',
+                    borderColor: chartTheme.line,
+                    backgroundColor: chartTheme.fill,
                     tension: 0.4
                 }]
             },
@@ -84,6 +116,27 @@ function initializeCharts() {
                 plugins: {
                     legend: {
                         position: 'top',
+                        labels: {
+                            color: chartTheme.text
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            color: chartTheme.text
+                        },
+                        grid: {
+                            color: chartTheme.grid
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: chartTheme.text
+                        },
+                        grid: {
+                            color: chartTheme.grid
+                        }
                     }
                 }
             }
@@ -274,3 +327,4 @@ window.dashboardUtils = {
     formatDate,
     getStatusBadge
 };
+

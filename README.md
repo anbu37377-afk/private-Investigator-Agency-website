@@ -1,6 +1,6 @@
-# Private Investigator Agency Website
+# Shadow Agency Website
 
-A complete, professional multipage HTML website for a Private Investigator Agency offering confidential investigation services and a secure client case update portal.
+A complete, professional multipage HTML website for a Shadow Agency offering confidential investigation services and a secure client case update portal.
 
 ## 📁 Project Structure
 
@@ -187,4 +187,5 @@ This is a demonstration website. For customization or development support, pleas
 
 ---
 
-**© 2026 Private Investigator Agency. All rights reserved.**
+**© 2026 Shadow Agency. All rights reserved.**
+

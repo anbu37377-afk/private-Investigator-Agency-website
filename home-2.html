@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Corporate & Legal Investigation Services - Professional Private Investigator Agency">
+        content="Corporate & Legal Investigation Services - Professional Shadow Agency">
     <meta name="keywords" content="corporate investigation, legal investigation, fraud detection, business security">
-    <title>Corporate Investigation Services - Private Investigator Agency</title>
+    <title>Corporate Investigation Services - Shadow Agency</title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -57,21 +57,52 @@
             background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%);
             color: #0a0e27;
             border: none;
-            font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 5px;
+            font-weight: 700;
+            padding: 14px 40px;
+            border-radius: 50px;
             transition: all 0.3s ease;
+            min-width: 260px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.4);
+            color: #0a0e27;
+        }
+
+        .btn-hero-outline {
+            border: 2px solid #ffffff !important;
+            color: #ffffff !important;
+            background: transparent !important;
+            font-weight: 700;
+            padding: 14px 40px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            min-width: 260px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-hero-outline:hover {
+            background: #ffffff !important;
+            color: #0a0e27 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
         }
 
         .stat-counter {
             font-size: 3rem;
             font-weight: 700;
             color: #d4af37;
+        }
+
+        @media (max-width: 576px) {
+            .btn-lg {
+                padding: 12px 25px !important;
+                font-size: 1rem !important;
+            }
         }
     </style>
 </head>
@@ -82,7 +113,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <i class="bi bi-shield-check"></i> Private Investigator Agency
+                    <i class="bi bi-shield-check"></i> Shadow Agency
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -117,13 +148,16 @@
                                 <a class="nav-link" href="pricing.html">Pricing</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="login.html">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-gold ms-2" href="register.html">Sign Up</a>
+                                <a class="btn btn-outline-primary ms-2" href="register.html">Sign Up</a>
                             </li>
                             <li class="nav-item d-flex align-items-center">
                                 <button id="themeToggle" class="theme-toggle menu-theme-toggle ms-2" type="button"
@@ -155,8 +189,8 @@
                                 and
                                 high-net-worth individuals. Discreet, thorough, and legally compliant.</p>
                             <div class="d-flex gap-3 flex-wrap justify-content-center">
-                                <a href="contact.html" class="btn btn-gold btn-lg">Schedule Consultation</a>
-                                <a href="services.html" class="btn btn-outline-light btn-lg">View Services</a>
+                                <a href="contact.html" class="btn btn-gold">Schedule Consultation</a>
+                                <a href="services.html" class="btn btn-hero-outline">View Services</a>
                             </div>
                         </div>
                     </div>
@@ -170,28 +204,28 @@
                 <div class="row text-center">
                     <div class="col-md-3 mb-4">
                         <div class="stat-item">
-                            <div class="stat-counter counter" data-target="500">0</div>
+                            <div class="stat-counter counter" data-target="500" data-suffix="+">0</div>
                             <h5 class="text-gold">Corporate Cases</h5>
                             <p class="text-muted">Successfully handled</p>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="stat-item">
-                            <div class="stat-counter counter" data-target="98">0</div>
+                            <div class="stat-counter counter" data-target="98" data-suffix="%">0</div>
                             <h5 class="text-gold">Success Rate %</h5>
                             <p class="text-muted">Case resolution</p>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="stat-item">
-                            <div class="stat-counter counter" data-target="25">0</div>
+                            <div class="stat-counter counter" data-target="25" data-suffix="+">0</div>
                             <h5 class="text-gold">Years Experience</h5>
                             <p class="text-muted">In corporate investigations</p>
                         </div>
                     </div>
                     <div class="col-md-3 mb-4">
                         <div class="stat-item">
-                            <div class="stat-counter counter" data-target="50">0</div>
+                            <div class="stat-counter counter" data-target="50" data-suffix="+">0</div>
                             <h5 class="text-gold">Expert Investigators</h5>
                             <p class="text-muted">Specialized team</p>
                         </div>
@@ -212,14 +246,14 @@
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="premium-card card h-100">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-start">
                                 <div class="mb-3">
-                                    <i class="bi bi-building display-4 text-gold mb-2 d-block"></i>
+                                    <i class="bi bi-building display-4 text-gold mb-2 d-inline-block"></i>
                                     <h4 class="card-title mb-0">Corporate Fraud Investigation</h4>
                                 </div>
                                 <p class="text-muted">Comprehensive fraud detection and investigation services including
                                     financial fraud, embezzlement, and internal theft cases.</p>
-                                <ul class="text-muted text-start d-inline-block">
+                                <ul class="text-muted text-start ps-4">
                                     <li>Financial statement analysis</li>
                                     <li>Asset tracing</li>
                                     <li>Employee misconduct investigations</li>
@@ -233,14 +267,14 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="premium-card card h-100">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-start">
                                 <div class="mb-3">
-                                    <i class="bi bi-briefcase display-4 text-gold mb-2 d-block"></i>
+                                    <i class="bi bi-briefcase display-4 text-gold mb-2 d-inline-block"></i>
                                     <h4 class="card-title mb-0">Due Diligence</h4>
                                 </div>
                                 <p class="text-muted">Thorough background investigations for mergers, acquisitions,
                                     partnerships, and investment decisions.</p>
-                                <ul class="text-muted text-start d-inline-block">
+                                <ul class="text-muted text-start ps-4">
                                     <li>Corporate background checks</li>
                                     <li>Management team verification</li>
                                     <li>Financial history analysis</li>
@@ -254,14 +288,14 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="premium-card card h-100">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-start">
                                 <div class="mb-3">
-                                    <i class="bi bi-shield-check display-4 text-gold mb-2 d-block"></i>
+                                    <i class="bi bi-shield-check display-4 text-gold mb-2 d-inline-block"></i>
                                     <h4 class="card-title mb-0">Intellectual Property Protection</h4>
                                 </div>
                                 <p class="text-muted">Investigation services to protect trade secrets, patents,
                                     trademarks, and proprietary information.</p>
-                                <ul class="text-muted text-start d-inline-block">
+                                <ul class="text-muted text-start ps-4">
                                     <li>Trade secret theft investigation</li>
                                     <li>Patent infringement cases</li>
                                     <li>Counterfeit product tracking</li>
@@ -275,14 +309,14 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="premium-card card h-100">
-                            <div class="card-body p-4 text-center">
+                            <div class="card-body p-4 text-start">
                                 <div class="mb-3">
-                                    <i class="bi bi-gavel display-4 text-gold mb-2 d-block"></i>
-                                    <h4 class="card-title mb-0">Legal Support Services</h4>
+                                    <i class="bi bi-bank display-4 text-gold mb-2 d-inline-block"></i>
+                                    <h4 class="card-title mb-0">LEGAL SUPPORT SERVICES</h4>
                                 </div>
                                 <p class="text-muted">Comprehensive investigation support for legal proceedings,
                                     litigation, and dispute resolution.</p>
-                                <ul class="text-muted text-start d-inline-block">
+                                <ul class="text-muted text-start ps-4">
                                     <li>Witness location and interviews</li>
                                     <li>Evidence gathering</li>
                                     <li>Service of process</li>
@@ -306,12 +340,14 @@
                         <h2 class="display-5 fw-bold text-white mb-4">Secure Client Case Update Portal</h2>
                         <p class="lead text-gold mb-4">Access your case files, review progress reports, and communicate
                             securely with your investigation team through our encrypted client portal.</p>
-                        <div class="d-flex gap-3 justify-content-center">
-                            <a href="login.html" class="btn btn-gold btn-lg">
-                                <i class="bi bi-lock-fill"></i> Secure Client Login
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center px-3">
+                            <a href="login.html"
+                                class="btn btn-gold btn-lg px-4 py-3 rounded-pill d-flex align-items-center justify-content-center">
+                                <i class="bi bi-lock-fill me-2"></i> Secure Client Login
                             </a>
-                            <a href="register.html" class="btn btn-outline-light btn-lg">
-                                <i class="bi bi-person-plus"></i> Register Account
+                            <a href="register.html"
+                                class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill d-flex align-items-center justify-content-center">
+                                <i class="bi bi-person-plus me-2"></i> Register Account
                             </a>
                         </div>
                     </div>
@@ -327,7 +363,7 @@
                 <div class="col-lg-4 mb-4">
                     <h5 class="footer-brand text-gold">
                         <a href="index.html" class="text-gold">
-                            <i class="bi bi-shield-check text-gold"></i> Private Investigator Agency
+                            <i class="bi bi-shield-check text-gold"></i> Shadow Agency
                         </a>
                     </h5>
                     <p>Elite corporate investigation services with uncompromising discretion and professional
@@ -368,7 +404,7 @@
             <hr class="my-4">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p class="text-muted">&copy; 2026 Private Investigator Agency. All rights reserved. | Privacy &
+                    <p class="text-muted">&copy; 2026 Shadow Agency. All rights reserved. | Privacy &
                         Confidentiality Guaranteed</p>
                 </div>
             </div>

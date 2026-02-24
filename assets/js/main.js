@@ -1,4 +1,4 @@
-// Private Investigator Agency - Main JavaScript
+// Shadow Agency - Main JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
     // Theme Toggle
@@ -165,3 +165,4 @@ function validatePhone(phone) {
     const re = /^[\d\s\-\+\(\)]+$/;
     return re.test(phone);
 }
+
