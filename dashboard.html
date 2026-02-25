@@ -98,7 +98,6 @@
         .top-header {
             background: var(--gradient-1);
             color: #ffffff;
-            /* Force white text */
             padding: 20px 0;
             margin-bottom: 30px;
             border-radius: 15px;
@@ -217,6 +216,77 @@
                 padding: 16px;
             }
         }
+
+        /* ===== FIX: Hamburger & top-header visibility on tablet/mobile ===== */
+        /* The global style.css sets [data-theme] * { color: ... !important }   */
+        /* which washes out the btn-outline-light hamburger. These rules fix it. */
+
+        /* Sidebar toggle (hamburger) button — always white on the dark header */
+        .page-dashboard #sidebarToggle,
+        .page-dashboard #sidebarToggle i,
+        [data-theme="light"] .page-dashboard #sidebarToggle,
+        [data-theme="light"] .page-dashboard #sidebarToggle i,
+        [data-theme="dark"] .page-dashboard #sidebarToggle,
+        [data-theme="dark"] .page-dashboard #sidebarToggle i {
+            color: #ffffff !important;
+            border-color: #ffffff !important;
+            border-width: 2px !important;
+        }
+
+        @media (max-width: 991.98px) {
+            .page-dashboard #sidebarToggle {
+                background-color: #ffffff !important;
+                color: #0a0e27 !important;
+                border: none !important;
+                padding: 6px 12px !important;
+                display: flex !important;
+                align-items: center !important;
+                justify-content: center !important;
+                min-width: 45px !important;
+                min-height: 45px !important;
+                border-radius: 8px !important;
+            }
+
+            .page-dashboard #sidebarToggle i {
+                color: #0a0e27 !important;
+                font-size: 1.5rem !important;
+            }
+        }
+
+        .page-dashboard #sidebarToggle:hover,
+        [data-theme="light"] .page-dashboard #sidebarToggle:hover,
+        [data-theme="dark"] .page-dashboard #sidebarToggle:hover {
+            background-color: rgba(255, 255, 255, 0.18) !important;
+            border-color: #ffffff !important;
+            color: #ffffff !important;
+        }
+
+        /* Dashboard titles in top header — always white */
+        .page-dashboard .top-header h4,
+        [data-theme="light"] .page-dashboard .top-header h4,
+        [data-theme="dark"] .page-dashboard .top-header h4 {
+            color: #ffffff !important;
+        }
+
+        /* Bell notification button in top header */
+        .page-dashboard .top-header .btn-outline-light,
+        .page-dashboard .top-header .btn-outline-light i,
+        [data-theme="light"] .page-dashboard .top-header .btn-outline-light,
+        [data-theme="light"] .page-dashboard .top-header .btn-outline-light i,
+        [data-theme="dark"] .page-dashboard .top-header .btn-outline-light,
+        [data-theme="dark"] .page-dashboard .top-header .btn-outline-light i {
+            color: #ffffff !important;
+            border-color: rgba(255, 255, 255, 0.7) !important;
+        }
+
+        /* Welcome text in top header */
+        .page-dashboard .top-header span.me-2,
+        [data-theme="light"] .page-dashboard .top-header span.me-2,
+        [data-theme="dark"] .page-dashboard .top-header span.me-2 {
+            color: #ffffff !important;
+        }
+
+        /* ===================================================================== */
     </style>
 </head>
 
