@@ -284,18 +284,21 @@
                 background-color: #ffffff !important;
                 color: #0a0e27 !important;
                 border: none !important;
-                padding: 6px 12px !important;
+                padding: 4px 8px !important;
                 display: flex !important;
                 align-items: center !important;
                 justify-content: center !important;
-                min-width: 45px !important;
-                min-height: 45px !important;
+                min-width: 38px !important;
+                min-height: 38px !important;
                 border-radius: 8px !important;
             }
 
             .page-dashboard #sidebarToggle i,
             [data-theme="light"] .page-dashboard #sidebarToggle i,
-            [data-theme="dark"] .page-dashboard #sidebarToggle i {
+            [data-theme="dark"] .page-dashboard #sidebarToggle i,
+            .page-dashboard #sidebarToggle i::before,
+            [data-theme="light"] .page-dashboard #sidebarToggle i::before,
+            [data-theme="dark"] .page-dashboard #sidebarToggle i::before {
                 color: #0a0e27 !important;
                 font-size: 1.5rem !important;
             }
@@ -420,14 +423,14 @@
             <div class="container-fluid">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-light me-3" id="sidebarToggle">
+                        <button class="btn btn-outline-light me-2 me-md-3" id="sidebarToggle">
                             <i class="bi bi-list"></i>
                         </button>
                         <h4 class="mb-0 text-white d-none d-md-block">Shadow Agency Dashboard</h4>
-                        <h4 class="mb-0 text-white d-block d-md-none fs-5">Client Dashboard</h4>
+                        <h4 class="mb-0 text-white d-block d-md-none fs-6">Client Dashboard</h4>
                     </div>
 
-                    <div class="d-flex align-items-center gap-3">
+                    <div class="d-flex align-items-center gap-2 gap-md-3">
                         <button id="themeToggle" class="theme-toggle menu-theme-toggle" type="button"
                             aria-label="Toggle dark and light mode">
                             <i class="bi bi-moon"></i>
@@ -435,7 +438,7 @@
                         <div class="position-relative">
                             <button
                                 class="btn btn-outline-light rounded-circle d-flex align-items-center justify-content-center"
-                                style="width: 40px; height: 40px; padding: 0;">
+                                style="width: 35px; height: 35px; padding: 0;">
                                 <i class="bi bi-bell"></i>
                             </button>
                             <span class="notification-badge">5</span>
@@ -443,7 +446,7 @@
                         <div class="d-flex align-items-center">
                             <span class="me-2 d-none d-sm-inline text-white">Welcome, John Doe</span>
                             <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80"
-                                alt="Profile" class="rounded-circle border border-warning" width="40" height="40"
+                                alt="Profile" class="rounded-circle border border-warning" width="35" height="35"
                                 style="object-fit: cover;">
                         </div>
                     </div>
