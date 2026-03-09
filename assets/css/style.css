@@ -4788,3 +4788,15 @@ each-page-logo i {
     letter-spacing: 0.3px !important;
     line-height: 1.1 !important;
 }
+
+/* ── Services page: fix broken words in hero title on mobile ── */
+@media (max-width: 575.98px) {
+    .page-services .hero-title {
+        font-size: clamp(1.4rem, 7.5vw, 1.9rem) !important;
+        letter-spacing: 0px !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        hyphens: none !important;
+        line-height: 1.2 !important;
+    }
+}
