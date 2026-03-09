@@ -203,6 +203,46 @@
             color: #a8b2d1 !important;
         }
 
+        /* Fix My Cases table contrast in dark mode */
+        [data-theme="dark"] .page-dashboard .table {
+            background-color: transparent !important;
+            --bs-table-bg: transparent !important;
+            color: #e8e8e8 !important;
+        }
+
+        [data-theme="dark"] .page-dashboard .table th,
+        [data-theme="dark"] .page-dashboard .table td,
+        [data-theme="dark"] .page-dashboard .table tr {
+            background-color: transparent !important;
+            color: #e8e8e8 !important;
+            border-color: rgba(212, 175, 55, 0.2) !important;
+        }
+
+        [data-theme="dark"] .page-dashboard .table-hover tbody tr:hover td {
+            background-color: rgba(255, 255, 255, 0.05) !important;
+            color: #ffffff !important;
+        }
+
+        /* Fix sidebar icons and links visibility in light mode */
+        [data-theme="light"] .page-dashboard .sidebar .nav-link,
+        [data-theme="light"] .page-dashboard .sidebar .nav-link i,
+        [data-theme="light"] .page-dashboard .sidebar .sidebar-brand-name {
+            color: #ffffff !important;
+        }
+
+        [data-theme="light"] .page-dashboard .sidebar .nav-link:hover,
+        [data-theme="light"] .page-dashboard .sidebar .nav-link.active,
+        [data-theme="light"] .page-dashboard .sidebar .nav-link:hover i,
+        [data-theme="light"] .page-dashboard .sidebar .nav-link.active i {
+            color: #ffffff !important;
+            background-color: var(--secondary-color) !important;
+        }
+
+        [data-theme="light"] .page-dashboard .sidebar .dashboard-brand-title,
+        [data-theme="light"] .page-dashboard .sidebar .text-warning {
+            color: #d4af37 !important;
+        }
+
         @media (max-width: 767.98px) {
             .main-content {
                 padding: 15px 12px;
@@ -224,17 +264,23 @@
         /* Sidebar toggle (hamburger) button — always white on the dark header */
         .page-dashboard #sidebarToggle,
         .page-dashboard #sidebarToggle i,
+        .page-dashboard #sidebarToggle i::before,
         [data-theme="light"] .page-dashboard #sidebarToggle,
         [data-theme="light"] .page-dashboard #sidebarToggle i,
+        [data-theme="light"] .page-dashboard #sidebarToggle i::before,
         [data-theme="dark"] .page-dashboard #sidebarToggle,
-        [data-theme="dark"] .page-dashboard #sidebarToggle i {
+        [data-theme="dark"] .page-dashboard #sidebarToggle i,
+        [data-theme="dark"] .page-dashboard #sidebarToggle i::before {
             color: #ffffff !important;
             border-color: #ffffff !important;
             border-width: 2px !important;
         }
 
         @media (max-width: 991.98px) {
-            .page-dashboard #sidebarToggle {
+
+            .page-dashboard #sidebarToggle,
+            [data-theme="light"] .page-dashboard #sidebarToggle,
+            [data-theme="dark"] .page-dashboard #sidebarToggle {
                 background-color: #ffffff !important;
                 color: #0a0e27 !important;
                 border: none !important;
@@ -247,7 +293,9 @@
                 border-radius: 8px !important;
             }
 
-            .page-dashboard #sidebarToggle i {
+            .page-dashboard #sidebarToggle i,
+            [data-theme="light"] .page-dashboard #sidebarToggle i,
+            [data-theme="dark"] .page-dashboard #sidebarToggle i {
                 color: #0a0e27 !important;
                 font-size: 1.5rem !important;
             }
@@ -286,6 +334,21 @@
             color: #ffffff !important;
         }
 
+        /* FORCE BRAND LOGO VISIBILITY IN BOTH THEMES */
+        .page-dashboard .sidebar .sidebar-brand i.bi-shield-check,
+        [data-theme="light"] .page-dashboard .sidebar .sidebar-brand i.bi-shield-check,
+        [data-theme="dark"] .page-dashboard .sidebar .sidebar-brand i.bi-shield-check {
+            display: inline-block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            color: #d4af37 !important;
+        }
+
+        [data-theme="light"] .page-dashboard .sidebar .sidebar-brand i.bi-shield-check::before,
+        [data-theme="dark"] .page-dashboard .sidebar .sidebar-brand i.bi-shield-check::before {
+            color: inherit !important;
+        }
+
         /* ===================================================================== */
     </style>
 </head>
@@ -319,7 +382,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#messages">
                         <i class="bi bi-envelope me-2"></i> Messages
-                        <span class="notification-badge">3</span>
                     </a>
                 </li>
                 <li class="nav-item">
