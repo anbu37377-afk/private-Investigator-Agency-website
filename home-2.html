@@ -332,8 +332,18 @@
         </section>
 
         <!-- Client Portal CTA -->
-        <section class="py-5 bg-primary text-white"
+        <section class="py-5 bg-primary text-white cta-section"
             style="background: linear-gradient(135deg, #d4af37 0%, #f4e4a6 100%) !important; padding: 80px 0;">
+            <style>
+                [data-theme="light"] .cta-section .btn-light,
+                [data-theme="light"] .cta-section .btn-light i {
+                    color: #ffffff !important;
+                }
+
+                [data-theme="dark"] .cta-section .btn-light i {
+                    display: none !important;
+                }
+            </style>
             <div class="container text-center">
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
